@@ -1,0 +1,6 @@
+maxIterations        "--max-iterations "          c  (10,20,30,40,60)
+subproblemTimeLimit  "--subproblem-time-limit "   c  (1,2,5,10)
+dampingGamma         "--damping-gamma "           r  (0.20,1.00)
+trustRadiusFactor    "--trust-radius-factor "      r  (0.10,1.00)
+neighborCuts         "--neighbor-cuts "            c  (1,2,4,6)
+polishMaxSteps       "--polish-max-steps "         c  (5,10,20,40,80)

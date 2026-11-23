@@ -1,0 +1,5 @@
+".ID.","maxIterations","subproblemTimeLimit","dampingGamma","trustRadiusFactor","neighborCuts","polishMaxSteps",".PARENT."
+37,"60","5",0.9318,0.7012,"1","5",NA
+66,"60","5",0.8041,0.6184,"4","5",37
+68,"30","2",0.9171,0.4186,"1","20",50
+141,"30","2",0.9652,0.4119,"1","20",68

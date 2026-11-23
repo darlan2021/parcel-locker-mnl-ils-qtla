@@ -1,0 +1,2 @@
+prTriggerNoImprove "--pr-trigger-no-improve " c (1, 2, 3, 5)
+prBidirectional "--pr-bidirectional " c (0, 1)

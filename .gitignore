@@ -1,0 +1,65 @@
+# ============================================================
+# Parcel Locker MNL — ILS / QTLA
+# Ignore only local, temporary and generated development files.
+# Keep research instances, checkpoints, solver logs and irace results.
+# ============================================================
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE / editor local settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# R / RStudio session state (not irace experiment results)
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Renviron
+.Rprofile
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary / lock files
+*.tmp
+*.temp
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.doc
+
+# IMPORTANT: Do not ignore research data or computational records:
+# *.npz, *.json, *.csv, *.xlsx, *.txt, *.log, *.Rdata, *.rds
+# These are intentionally tracked when they belong to the project.

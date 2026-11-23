@@ -1,0 +1,47 @@
+FROZEN BASELINE: ILvAS1
+=======================
+
+These values are NOT calibrated in this PR experiment.
+
+grasp_starts = 8
+grasp_alpha = 0.0823
+max_vnd_passes = 250
+tau_tabu = 13
+max_cardinality_violation = 1
+s2_sample_size = 350
+first_improvement = False  # BI
+
+enable_A = True
+enable_S1 = True
+enable_S2 = False
+enable_path_relink = True
+
+penalty_weight = None
+penalty_multiplier = 2.2255
+penalty_quadratic = 0.6576
+
+max_iterations = 10
+time_limit = None
+initial_perturbation_strength = 2
+min_perturbation_strength = 1
+max_perturbation_strength = 10
+stagnation_window = 22
+acceptance_tolerance = 0.0074
+
+perturb_prob_A = 0.15
+perturb_prob_S1 = 0.55
+perturb_prob_S2 = 0.30
+
+elite_size = 6
+elite_min_hamming = 6
+
+PR FIXED:
+path_relink_s2_samples = 0
+path_relink_interval = 0  # periodic trigger disabled; calibration uses stagnation trigger
+
+PR PARAMETERS CALIBRATED:
+pr_trigger_no_improve in {1, 2, 3, 5}
+path_relink_bidirectional in {False, True}
+
+Heuristic seed:
+set by the irace-provided algorithm seed for each run.

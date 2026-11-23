@@ -1,0 +1,45 @@
+$version
+[1] "4.4.1.ccb6607"
+
+$n_iterations
+[1] 5
+
+$n_configurations
+[1] 159
+
+$n_initial_configurations
+[1] 0
+
+$n_instances
+[1] 52
+
+$n_experiments
+[1] 5000
+
+$n_elites
+[1] 4
+
+$n_soft_restarts
+[1] 0
+
+$n_rejected
+[1] 0
+
+$time_targetrunner
+[1] 0
+
+$time_cpu_user
+[1] 19.68
+
+$time_cpu_sys
+[1] 58.12
+
+$time_cpu_total
+[1] 77.8
+
+$time_wallclock
+[1] 9527.65
+
+$termination_reason
+[1] "Not enough budget to race more than the minimum configurations"
+

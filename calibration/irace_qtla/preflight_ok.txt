@@ -1,0 +1,5 @@
+QT-LA PRE-FLIGHT SUCCESSFUL
+instances = 72
+blocks = 18 x 4
+maxExperiments = 5000
+irace seed = 12345

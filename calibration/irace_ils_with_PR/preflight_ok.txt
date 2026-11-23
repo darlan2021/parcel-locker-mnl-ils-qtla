@@ -1,0 +1,8 @@
+PRE-FLIGHT OK: 2026-10-13 23:18:39.330064
+irace_version: 4.4.1
+R_version: R version 4.4.1 (2024-06-14 ucrt)
+Baseline: frozen ILvAS1.
+PR-S2 disabled.
+Free parameters: prTriggerNoImprove and prBidirectional.
+Design: 72 instances, 18 blocks x 4 size groups.
+Temporary target-runner rows removed after checkIraceScenario().

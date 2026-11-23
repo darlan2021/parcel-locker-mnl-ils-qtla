@@ -1,0 +1,802 @@
+==============================================================================================================
+ILS[A+S1]+PR - FULL PROFILING - 30 HEURISTIC SEEDS
+==============================================================================================================
+Instances              : 24
+Instance seed          : 1
+Configurations         : ILvAS1P
+Heuristic seeds        : [183601, 122241, 347126, 420036, 22114, 384850, 435983, 134804, 172693, 210450, 171434, 187001, 133041, 328721, 497477, 91030, 87198, 205899, 400804, 237596, 1346, 411979, 295898, 269046, 154485, 171750, 231105, 317139, 409973, 89335]
+Improvement strategy   : BI (first_improvement=False)
+Path Relinking         : ON | trigger=5 | bidirectional=False | PR-S2=0
+Expected runs          : 720
+
+FROZEN IRACE ID 7 PARAMETERS
+  grasp_starts = 8
+  grasp_alpha = 0.0823
+  max_vnd_passes = 250
+  tau_tabu = 13
+  max_cardinality_violation = 1
+  s2_sample_size = 350
+  first_improvement = False
+  enable_A = True
+  enable_S1 = True
+  enable_S2 = False
+  enable_path_relink = True
+  penalty_weight = None
+  penalty_multiplier = 2.2255
+  penalty_quadratic = 0.6576
+  max_iterations = 10
+  time_limit = None
+  initial_perturbation_strength = 2
+  min_perturbation_strength = 1
+  max_perturbation_strength = 10
+  stagnation_window = 22
+  acceptance_tolerance = 0.0074
+  perturb_prob_A = 0.15
+  perturb_prob_S1 = 0.55
+  perturb_prob_S2 = 0.3
+  elite_size = 6
+  elite_min_hamming = 6
+  path_relink_interval = 0
+  path_relink_bidirectional = False
+  path_relink_s2_samples = 0
+
+COMPONENT FLAGS
+  ILvAS1P: {}
+
+INSTANCES
+  N60_I30_K15_J15_P3_a0p5_s1 | N=60 | p=3 | alpha=0.5 | instance_seed=1
+  N60_I30_K15_J15_P3_a1p0_s1 | N=60 | p=3 | alpha=1.0 | instance_seed=1
+  N60_I30_K15_J15_P3_a2p0_s1 | N=60 | p=3 | alpha=2.0 | instance_seed=1
+  N60_I30_K15_J15_P6_a0p5_s1 | N=60 | p=6 | alpha=0.5 | instance_seed=1
+  N60_I30_K15_J15_P6_a1p0_s1 | N=60 | p=6 | alpha=1.0 | instance_seed=1
+  N60_I30_K15_J15_P6_a2p0_s1 | N=60 | p=6 | alpha=2.0 | instance_seed=1
+  N100_I50_K25_J25_P5_a0p5_s1 | N=100 | p=5 | alpha=0.5 | instance_seed=1
+  N100_I50_K25_J25_P5_a1p0_s1 | N=100 | p=5 | alpha=1.0 | instance_seed=1
+  N100_I50_K25_J25_P5_a2p0_s1 | N=100 | p=5 | alpha=2.0 | instance_seed=1
+  N100_I50_K25_J25_P10_a0p5_s1 | N=100 | p=10 | alpha=0.5 | instance_seed=1
+  N100_I50_K25_J25_P10_a1p0_s1 | N=100 | p=10 | alpha=1.0 | instance_seed=1
+  N100_I50_K25_J25_P10_a2p0_s1 | N=100 | p=10 | alpha=2.0 | instance_seed=1
+  N200_I100_K50_J50_P10_a0p5_s1 | N=200 | p=10 | alpha=0.5 | instance_seed=1
+  N200_I100_K50_J50_P10_a1p0_s1 | N=200 | p=10 | alpha=1.0 | instance_seed=1
+  N200_I100_K50_J50_P10_a2p0_s1 | N=200 | p=10 | alpha=2.0 | instance_seed=1
+  N200_I100_K50_J50_P20_a0p5_s1 | N=200 | p=20 | alpha=0.5 | instance_seed=1
+  N200_I100_K50_J50_P20_a1p0_s1 | N=200 | p=20 | alpha=1.0 | instance_seed=1
+  N200_I100_K50_J50_P20_a2p0_s1 | N=200 | p=20 | alpha=2.0 | instance_seed=1
+  N400_I200_K100_J100_P20_a0p5_s1 | N=400 | p=20 | alpha=0.5 | instance_seed=1
+  N400_I200_K100_J100_P20_a1p0_s1 | N=400 | p=20 | alpha=1.0 | instance_seed=1
+  N400_I200_K100_J100_P20_a2p0_s1 | N=400 | p=20 | alpha=2.0 | instance_seed=1
+  N400_I200_K100_J100_P30_a0p5_s1 | N=400 | p=30 | alpha=0.5 | instance_seed=1
+  N400_I200_K100_J100_P30_a1p0_s1 | N=400 | p=30 | alpha=1.0 | instance_seed=1
+  N400_I200_K100_J100_P30_a2p0_s1 | N=400 | p=30 | alpha=2.0 | instance_seed=1
+
+==============================================================================================================
+
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=183601 | C=477.7233865600 | time=0.348171s | PRcalls=0 | PRtime=0.000000s | A_evals=1543 | S1_evals=2952 | A_accepted=14 | S1_accepted=23 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=122241 | C=477.7233865600 | time=0.343880s | PRcalls=0 | PRtime=0.000000s | A_evals=1895 | S1_evals=2952 | A_accepted=25 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=347126 | C=477.7233865600 | time=0.381497s | PRcalls=0 | PRtime=0.000000s | A_evals=2003 | S1_evals=3528 | A_accepted=24 | S1_accepted=31 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=420036 | C=477.7233865600 | time=0.364869s | PRcalls=0 | PRtime=0.000000s | A_evals=1736 | S1_evals=3168 | A_accepted=19 | S1_accepted=26 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed= 22114 | C=477.7233865600 | time=0.409586s | PRcalls=0 | PRtime=0.000000s | A_evals=1933 | S1_evals=3168 | A_accepted=23 | S1_accepted=26 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=384850 | C=477.7233865600 | time=0.486999s | PRcalls=0 | PRtime=0.000000s | A_evals=1625 | S1_evals=3024 | A_accepted=14 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=435983 | C=477.7233865600 | time=0.443651s | PRcalls=0 | PRtime=0.000000s | A_evals=1625 | S1_evals=3096 | A_accepted=13 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=134804 | C=477.7233865600 | time=0.401044s | PRcalls=0 | PRtime=0.000000s | A_evals=1903 | S1_evals=3096 | A_accepted=23 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=172693 | C=477.7233865600 | time=0.408745s | PRcalls=0 | PRtime=0.000000s | A_evals=1756 | S1_evals=2932 | A_accepted=19 | S1_accepted=23 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=210450 | C=477.7233865600 | time=0.428094s | PRcalls=0 | PRtime=0.000000s | A_evals=1914 | S1_evals=3024 | A_accepted=24 | S1_accepted=24 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=171434 | C=477.7233865600 | time=0.374396s | PRcalls=0 | PRtime=0.000000s | A_evals=1777 | S1_evals=3384 | A_accepted=17 | S1_accepted=29 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=187001 | C=477.7233865600 | time=0.360085s | PRcalls=0 | PRtime=0.000000s | A_evals=1753 | S1_evals=2952 | A_accepted=20 | S1_accepted=23 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=133041 | C=477.7233865600 | time=0.350478s | PRcalls=0 | PRtime=0.000000s | A_evals=1786 | S1_evals=2808 | A_accepted=22 | S1_accepted=21 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=328721 | C=477.7233865600 | time=0.365742s | PRcalls=0 | PRtime=0.000000s | A_evals=1878 | S1_evals=3168 | A_accepted=23 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=497477 | C=477.7233865600 | time=0.368634s | PRcalls=0 | PRtime=0.000000s | A_evals=2053 | S1_evals=3168 | A_accepted=27 | S1_accepted=26 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed= 91030 | C=477.7233865600 | time=0.350130s | PRcalls=0 | PRtime=0.000000s | A_evals=1802 | S1_evals=3024 | A_accepted=21 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed= 87198 | C=477.7233865600 | time=0.367016s | PRcalls=0 | PRtime=0.000000s | A_evals=1794 | S1_evals=3096 | A_accepted=19 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=205899 | C=477.7233865600 | time=0.363920s | PRcalls=0 | PRtime=0.000000s | A_evals=1903 | S1_evals=3168 | A_accepted=22 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=400804 | C=477.7233865600 | time=0.395418s | PRcalls=0 | PRtime=0.000000s | A_evals=1883 | S1_evals=3456 | A_accepted=21 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=237596 | C=477.7233865600 | time=0.377125s | PRcalls=0 | PRtime=0.000000s | A_evals=1753 | S1_evals=3168 | A_accepted=17 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=  1346 | C=477.7233865600 | time=0.344558s | PRcalls=0 | PRtime=0.000000s | A_evals=1663 | S1_evals=3024 | A_accepted=17 | S1_accepted=24 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=411979 | C=477.7233865600 | time=0.340411s | PRcalls=0 | PRtime=0.000000s | A_evals=1573 | S1_evals=2592 | A_accepted=20 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=295898 | C=477.7233865600 | time=0.373601s | PRcalls=0 | PRtime=0.000000s | A_evals=2064 | S1_evals=3312 | A_accepted=25 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=269046 | C=477.7233865600 | time=0.417073s | PRcalls=0 | PRtime=0.000000s | A_evals=1775 | S1_evals=3096 | A_accepted=18 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=154485 | C=477.7233865600 | time=0.417167s | PRcalls=0 | PRtime=0.000000s | A_evals=1805 | S1_evals=2736 | A_accepted=24 | S1_accepted=20 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=171750 | C=477.7233865600 | time=0.409566s | PRcalls=0 | PRtime=0.000000s | A_evals=1494 | S1_evals=2448 | A_accepted=18 | S1_accepted=16 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=231105 | C=477.7233865600 | time=0.381439s | PRcalls=0 | PRtime=0.000000s | A_evals=1879 | S1_evals=2736 | A_accepted=25 | S1_accepted=20 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=317139 | C=477.7233865600 | time=0.414726s | PRcalls=0 | PRtime=0.000000s | A_evals=1895 | S1_evals=3312 | A_accepted=19 | S1_accepted=28 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed=409973 | C=477.7233865600 | time=0.430230s | PRcalls=0 | PRtime=0.000000s | A_evals=1777 | S1_evals=3240 | A_accepted=19 | S1_accepted=27 | audit=5.684e-14
+ILvAS1P  | N60_I30_K15_J15_P3_a0p5_s1 | seed= 89335 | C=477.7233865600 | time=0.468578s | PRcalls=0 | PRtime=0.000000s | A_evals=1846 | S1_evals=3096 | A_accepted=20 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=183601 | C=741.1082862682 | time=0.449625s | PRcalls=0 | PRtime=0.000000s | A_evals=1709 | S1_evals=3240 | A_accepted=16 | S1_accepted=27 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=122241 | C=741.1082862682 | time=0.369315s | PRcalls=0 | PRtime=0.000000s | A_evals=1774 | S1_evals=3024 | A_accepted=23 | S1_accepted=24 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=347126 | C=741.1082862682 | time=0.388487s | PRcalls=0 | PRtime=0.000000s | A_evals=1962 | S1_evals=3384 | A_accepted=25 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=420036 | C=741.1082862682 | time=0.367590s | PRcalls=0 | PRtime=0.000000s | A_evals=1671 | S1_evals=2592 | A_accepted=24 | S1_accepted=18 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed= 22114 | C=741.1082862682 | time=0.411603s | PRcalls=0 | PRtime=0.000000s | A_evals=1963 | S1_evals=2880 | A_accepted=28 | S1_accepted=22 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=384850 | C=741.1082862682 | time=0.444682s | PRcalls=0 | PRtime=0.000000s | A_evals=1570 | S1_evals=3168 | A_accepted=12 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=435983 | C=741.1082862682 | time=0.424523s | PRcalls=0 | PRtime=0.000000s | A_evals=1715 | S1_evals=2952 | A_accepted=18 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=134804 | C=741.1082862682 | time=0.445307s | PRcalls=0 | PRtime=0.000000s | A_evals=1819 | S1_evals=2520 | A_accepted=26 | S1_accepted=17 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=172693 | C=741.1082862682 | time=0.535917s | PRcalls=0 | PRtime=0.000000s | A_evals=1576 | S1_evals=2736 | A_accepted=16 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=210450 | C=741.1082862682 | time=0.843140s | PRcalls=0 | PRtime=0.000000s | A_evals=1955 | S1_evals=2952 | A_accepted=26 | S1_accepted=23 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=171434 | C=741.1082862682 | time=0.662853s | PRcalls=0 | PRtime=0.000000s | A_evals=1916 | S1_evals=3240 | A_accepted=24 | S1_accepted=27 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=187001 | C=741.1082862682 | time=0.578402s | PRcalls=0 | PRtime=0.000000s | A_evals=2023 | S1_evals=2880 | A_accepted=30 | S1_accepted=22 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=133041 | C=741.1082862682 | time=0.510630s | PRcalls=0 | PRtime=0.000000s | A_evals=2009 | S1_evals=3168 | A_accepted=27 | S1_accepted=26 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=328721 | C=741.1082862682 | time=0.494035s | PRcalls=0 | PRtime=0.000000s | A_evals=1810 | S1_evals=3024 | A_accepted=22 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=497477 | C=741.1082862682 | time=0.459018s | PRcalls=0 | PRtime=0.000000s | A_evals=1734 | S1_evals=3096 | A_accepted=17 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed= 91030 | C=741.1082862682 | time=0.451654s | PRcalls=0 | PRtime=0.000000s | A_evals=1761 | S1_evals=2880 | A_accepted=22 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed= 87198 | C=741.1082862682 | time=0.534320s | PRcalls=0 | PRtime=0.000000s | A_evals=1848 | S1_evals=3096 | A_accepted=23 | S1_accepted=25 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=205899 | C=741.1082862682 | time=0.551200s | PRcalls=0 | PRtime=0.000000s | A_evals=1857 | S1_evals=2808 | A_accepted=24 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=400804 | C=741.1082862682 | time=0.625433s | PRcalls=0 | PRtime=0.000000s | A_evals=2279 | S1_evals=3456 | A_accepted=32 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=237596 | C=741.1082862682 | time=0.606580s | PRcalls=0 | PRtime=0.000000s | A_evals=2023 | S1_evals=3312 | A_accepted=24 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=  1346 | C=741.1082862682 | time=0.617096s | PRcalls=0 | PRtime=0.000000s | A_evals=1971 | S1_evals=3384 | A_accepted=22 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=411979 | C=741.1082862682 | time=0.664543s | PRcalls=0 | PRtime=0.000000s | A_evals=1881 | S1_evals=3528 | A_accepted=17 | S1_accepted=31 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=295898 | C=741.1082862682 | time=0.794403s | PRcalls=0 | PRtime=0.000000s | A_evals=1777 | S1_evals=2808 | A_accepted=25 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=269046 | C=741.1082862682 | time=0.880919s | PRcalls=0 | PRtime=0.000000s | A_evals=1701 | S1_evals=2880 | A_accepted=20 | S1_accepted=22 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=154485 | C=741.1082862682 | time=1.001947s | PRcalls=0 | PRtime=0.000000s | A_evals=2045 | S1_evals=3168 | A_accepted=26 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=171750 | C=741.1082862682 | time=0.646742s | PRcalls=0 | PRtime=0.000000s | A_evals=1764 | S1_evals=2664 | A_accepted=24 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=231105 | C=741.1082862682 | time=0.572236s | PRcalls=0 | PRtime=0.000000s | A_evals=2143 | S1_evals=3168 | A_accepted=30 | S1_accepted=26 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=317139 | C=741.1082862682 | time=0.520497s | PRcalls=0 | PRtime=0.000000s | A_evals=1810 | S1_evals=2808 | A_accepted=25 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed=409973 | C=741.1082862682 | time=0.456829s | PRcalls=0 | PRtime=0.000000s | A_evals=1693 | S1_evals=2880 | A_accepted=19 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a1p0_s1 | seed= 89335 | C=741.1082862682 | time=0.435338s | PRcalls=0 | PRtime=0.000000s | A_evals=1630 | S1_evals=2952 | A_accepted=17 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=183601 | C=950.8621875660 | time=0.467365s | PRcalls=0 | PRtime=0.000000s | A_evals=1993 | S1_evals=3744 | A_accepted=18 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=122241 | C=950.8621875660 | time=0.478001s | PRcalls=0 | PRtime=0.000000s | A_evals=2116 | S1_evals=3456 | A_accepted=24 | S1_accepted=30 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=347126 | C=950.8621875660 | time=0.599724s | PRcalls=0 | PRtime=0.000000s | A_evals=2268 | S1_evals=3960 | A_accepted=25 | S1_accepted=37 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=420036 | C=950.8621875660 | time=0.849312s | PRcalls=0 | PRtime=0.000000s | A_evals=2077 | S1_evals=3816 | A_accepted=21 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed= 22114 | C=950.8621875660 | time=0.705192s | PRcalls=0 | PRtime=0.000000s | A_evals=2129 | S1_evals=3888 | A_accepted=21 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=384850 | C=950.8621875660 | time=0.805278s | PRcalls=0 | PRtime=0.000000s | A_evals=1865 | S1_evals=3456 | A_accepted=16 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=435983 | C=950.8621875660 | time=0.529559s | PRcalls=0 | PRtime=0.000000s | A_evals=1753 | S1_evals=3384 | A_accepted=14 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=134804 | C=950.8621875660 | time=0.473761s | PRcalls=0 | PRtime=0.000000s | A_evals=2129 | S1_evals=3600 | A_accepted=25 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=172693 | C=950.8621875660 | time=0.448668s | PRcalls=0 | PRtime=0.000000s | A_evals=2067 | S1_evals=3456 | A_accepted=22 | S1_accepted=30 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=210450 | C=950.8621875660 | time=0.488345s | PRcalls=0 | PRtime=0.000000s | A_evals=2544 | S1_evals=3816 | A_accepted=34 | S1_accepted=35 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=171434 | C=950.8621875660 | time=0.470552s | PRcalls=0 | PRtime=0.000000s | A_evals=2107 | S1_evals=3600 | A_accepted=25 | S1_accepted=32 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=187001 | C=950.8621875660 | time=0.446997s | PRcalls=0 | PRtime=0.000000s | A_evals=1823 | S1_evals=3456 | A_accepted=19 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=133041 | C=950.8621875660 | time=0.524460s | PRcalls=0 | PRtime=0.000000s | A_evals=2233 | S1_evals=3888 | A_accepted=23 | S1_accepted=36 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=328721 | C=950.8621875660 | time=0.506361s | PRcalls=0 | PRtime=0.000000s | A_evals=2306 | S1_evals=3816 | A_accepted=29 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=497477 | C=950.8621875660 | time=0.505203s | PRcalls=0 | PRtime=0.000000s | A_evals=2416 | S1_evals=3816 | A_accepted=29 | S1_accepted=35 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed= 91030 | C=950.8621875660 | time=0.451724s | PRcalls=0 | PRtime=0.000000s | A_evals=2072 | S1_evals=3528 | A_accepted=23 | S1_accepted=31 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed= 87198 | C=950.8621875660 | time=0.468135s | PRcalls=0 | PRtime=0.000000s | A_evals=2244 | S1_evals=3744 | A_accepted=25 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=205899 | C=950.8621875660 | time=0.459761s | PRcalls=0 | PRtime=0.000000s | A_evals=2050 | S1_evals=3816 | A_accepted=19 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=400804 | C=950.8621875660 | time=0.467448s | PRcalls=0 | PRtime=0.000000s | A_evals=2060 | S1_evals=4032 | A_accepted=20 | S1_accepted=38 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=237596 | C=950.8621875660 | time=0.456848s | PRcalls=0 | PRtime=0.000000s | A_evals=1982 | S1_evals=3600 | A_accepted=19 | S1_accepted=32 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=  1346 | C=950.8621875660 | time=0.466982s | PRcalls=0 | PRtime=0.000000s | A_evals=2162 | S1_evals=3672 | A_accepted=24 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=411979 | C=950.8621875660 | time=0.459948s | PRcalls=0 | PRtime=0.000000s | A_evals=2214 | S1_evals=3384 | A_accepted=29 | S1_accepted=29 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=295898 | C=950.8621875660 | time=0.467143s | PRcalls=0 | PRtime=0.000000s | A_evals=2309 | S1_evals=3744 | A_accepted=29 | S1_accepted=34 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=269046 | C=950.8621875660 | time=0.434291s | PRcalls=0 | PRtime=0.000000s | A_evals=1824 | S1_evals=3168 | A_accepted=19 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=154485 | C=950.8621875660 | time=0.505470s | PRcalls=0 | PRtime=0.000000s | A_evals=2615 | S1_evals=3960 | A_accepted=34 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=171750 | C=950.8621875660 | time=0.646192s | PRcalls=0 | PRtime=0.000000s | A_evals=2514 | S1_evals=3744 | A_accepted=34 | S1_accepted=34 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=231105 | C=950.8621875660 | time=0.728806s | PRcalls=0 | PRtime=0.000000s | A_evals=2034 | S1_evals=3384 | A_accepted=23 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=317139 | C=950.8621875660 | time=0.599414s | PRcalls=0 | PRtime=0.000000s | A_evals=2146 | S1_evals=3456 | A_accepted=25 | S1_accepted=30 | audit=1.137e-13
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed=409973 | C=950.8621875660 | time=0.696786s | PRcalls=0 | PRtime=0.000000s | A_evals=2342 | S1_evals=3672 | A_accepted=30 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P3_a2p0_s1 | seed= 89335 | C=950.8621875660 | time=0.686519s | PRcalls=0 | PRtime=0.000000s | A_evals=1756 | S1_evals=3168 | A_accepted=16 | S1_accepted=26 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=183601 | C=514.1474018760 | time=0.737973s | PRcalls=0 | PRtime=0.000000s | A_evals=2272 | S1_evals=3886 | A_accepted=36 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=122241 | C=514.1474018760 | time=0.621167s | PRcalls=0 | PRtime=0.000000s | A_evals=2204 | S1_evals=3398 | A_accepted=39 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=347126 | C=514.1474018760 | time=0.623746s | PRcalls=0 | PRtime=0.000000s | A_evals=2452 | S1_evals=3626 | A_accepted=45 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=420036 | C=514.1474018760 | time=0.851074s | PRcalls=0 | PRtime=0.000000s | A_evals=2122 | S1_evals=3614 | A_accepted=34 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed= 22114 | C=514.1474018760 | time=0.953414s | PRcalls=0 | PRtime=0.000000s | A_evals=2294 | S1_evals=3624 | A_accepted=40 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=384850 | C=514.1474018760 | time=0.881415s | PRcalls=0 | PRtime=0.000000s | A_evals=2256 | S1_evals=3918 | A_accepted=36 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=435983 | C=514.1474018760 | time=0.853349s | PRcalls=0 | PRtime=0.000000s | A_evals=2324 | S1_evals=3596 | A_accepted=41 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=134804 | C=514.1474018760 | time=0.710084s | PRcalls=0 | PRtime=0.000000s | A_evals=2602 | S1_evals=4144 | A_accepted=45 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=172693 | C=514.1474018760 | time=0.604772s | PRcalls=0 | PRtime=0.000000s | A_evals=2370 | S1_evals=3606 | A_accepted=42 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=210450 | C=514.1474018760 | time=0.588117s | PRcalls=0 | PRtime=0.000000s | A_evals=2482 | S1_evals=3440 | A_accepted=47 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=171434 | C=514.1474018760 | time=0.631250s | PRcalls=0 | PRtime=0.000000s | A_evals=2474 | S1_evals=4014 | A_accepted=43 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=187001 | C=514.1474018760 | time=0.619142s | PRcalls=0 | PRtime=0.000000s | A_evals=2324 | S1_evals=3986 | A_accepted=37 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=133041 | C=514.1474018760 | time=0.628733s | PRcalls=0 | PRtime=0.000000s | A_evals=2414 | S1_evals=4012 | A_accepted=40 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=328721 | C=514.1474018760 | time=0.608061s | PRcalls=0 | PRtime=0.000000s | A_evals=2512 | S1_evals=3714 | A_accepted=46 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=497477 | C=514.1474018760 | time=0.595034s | PRcalls=0 | PRtime=0.000000s | A_evals=2346 | S1_evals=3588 | A_accepted=42 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed= 91030 | C=514.1474018760 | time=0.626756s | PRcalls=0 | PRtime=0.000000s | A_evals=2594 | S1_evals=3794 | A_accepted=48 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed= 87198 | C=514.1474018760 | time=0.570181s | PRcalls=0 | PRtime=0.000000s | A_evals=2242 | S1_evals=3310 | A_accepted=41 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=205899 | C=514.1474018760 | time=0.591656s | PRcalls=0 | PRtime=0.000000s | A_evals=2370 | S1_evals=3622 | A_accepted=42 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=400804 | C=514.1474018760 | time=0.653486s | PRcalls=0 | PRtime=0.000000s | A_evals=2452 | S1_evals=4002 | A_accepted=41 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=237596 | C=514.1474018760 | time=0.605096s | PRcalls=0 | PRtime=0.000000s | A_evals=2340 | S1_evals=3400 | A_accepted=43 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=  1346 | C=514.1474018760 | time=0.663906s | PRcalls=0 | PRtime=0.000000s | A_evals=2572 | S1_evals=4426 | A_accepted=41 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=411979 | C=514.1474018760 | time=0.869115s | PRcalls=0 | PRtime=0.000000s | A_evals=2286 | S1_evals=4000 | A_accepted=36 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=295898 | C=514.1474018760 | time=0.869866s | PRcalls=0 | PRtime=0.000000s | A_evals=2564 | S1_evals=4262 | A_accepted=41 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=269046 | C=514.1474018760 | time=0.953649s | PRcalls=0 | PRtime=0.000000s | A_evals=2354 | S1_evals=4158 | A_accepted=37 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=154485 | C=514.1474018760 | time=0.908072s | PRcalls=0 | PRtime=0.000000s | A_evals=2422 | S1_evals=4320 | A_accepted=37 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=171750 | C=514.1474018760 | time=0.742064s | PRcalls=0 | PRtime=0.000000s | A_evals=2632 | S1_evals=3894 | A_accepted=48 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=231105 | C=514.1474018760 | time=0.626243s | PRcalls=0 | PRtime=0.000000s | A_evals=2354 | S1_evals=3436 | A_accepted=44 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=317139 | C=514.1474018760 | time=0.593636s | PRcalls=0 | PRtime=0.000000s | A_evals=2160 | S1_evals=3780 | A_accepted=33 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed=409973 | C=514.1474018760 | time=0.581342s | PRcalls=0 | PRtime=0.000000s | A_evals=2370 | S1_evals=3394 | A_accepted=44 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a0p5_s1 | seed= 89335 | C=514.1474018760 | time=0.626245s | PRcalls=0 | PRtime=0.000000s | A_evals=2316 | S1_evals=3770 | A_accepted=39 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=183601 | C=803.8894759083 | time=0.588599s | PRcalls=0 | PRtime=0.000000s | A_evals=1866 | S1_evals=3544 | A_accepted=29 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=122241 | C=803.8894759083 | time=0.649105s | PRcalls=0 | PRtime=0.000000s | A_evals=2092 | S1_evals=3542 | A_accepted=36 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=347126 | C=803.8894759083 | time=0.795928s | PRcalls=0 | PRtime=0.000000s | A_evals=1830 | S1_evals=3348 | A_accepted=29 | S1_accepted=14 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=420036 | C=803.8894759083 | time=0.947021s | PRcalls=0 | PRtime=0.000000s | A_evals=1910 | S1_evals=4116 | A_accepted=26 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed= 22114 | C=803.8894759083 | time=0.907104s | PRcalls=0 | PRtime=0.000000s | A_evals=1994 | S1_evals=3448 | A_accepted=34 | S1_accepted=15 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=384850 | C=803.8894759083 | time=0.990264s | PRcalls=0 | PRtime=0.000000s | A_evals=1978 | S1_evals=4396 | A_accepted=25 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=435983 | C=803.8894759083 | time=0.630242s | PRcalls=0 | PRtime=0.000000s | A_evals=1964 | S1_evals=2940 | A_accepted=38 | S1_accepted=10 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=134804 | C=803.8894759083 | time=0.555100s | PRcalls=0 | PRtime=0.000000s | A_evals=1792 | S1_evals=3236 | A_accepted=29 | S1_accepted=13 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=172693 | C=803.8894759083 | time=0.574180s | PRcalls=0 | PRtime=0.000000s | A_evals=2062 | S1_evals=3436 | A_accepted=36 | S1_accepted=15 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=210450 | C=803.8894759083 | time=0.556702s | PRcalls=0 | PRtime=0.000000s | A_evals=2032 | S1_evals=3128 | A_accepted=38 | S1_accepted=12 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=171434 | C=803.8894759083 | time=0.574618s | PRcalls=0 | PRtime=0.000000s | A_evals=1724 | S1_evals=3786 | A_accepted=22 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=187001 | C=803.8894759083 | time=0.576982s | PRcalls=0 | PRtime=0.000000s | A_evals=1874 | S1_evals=3780 | A_accepted=27 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=133041 | C=803.8894759083 | time=0.608214s | PRcalls=0 | PRtime=0.000000s | A_evals=2054 | S1_evals=3972 | A_accepted=31 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=328721 | C=803.8894759083 | time=0.595716s | PRcalls=0 | PRtime=0.000000s | A_evals=2084 | S1_evals=3640 | A_accepted=35 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=497477 | C=803.8894759083 | time=0.598996s | PRcalls=0 | PRtime=0.000000s | A_evals=2166 | S1_evals=3850 | A_accepted=36 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed= 91030 | C=803.8894759083 | time=0.584496s | PRcalls=0 | PRtime=0.000000s | A_evals=1912 | S1_evals=3628 | A_accepted=29 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed= 87198 | C=803.8894759083 | time=0.588405s | PRcalls=0 | PRtime=0.000000s | A_evals=2122 | S1_evals=3442 | A_accepted=38 | S1_accepted=15 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=205899 | C=803.8894759083 | time=0.555776s | PRcalls=0 | PRtime=0.000000s | A_evals=1830 | S1_evals=3040 | A_accepted=32 | S1_accepted=11 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=400804 | C=803.8894759083 | time=0.950245s | PRcalls=0 | PRtime=0.000000s | A_evals=2294 | S1_evals=3568 | A_accepted=43 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=237596 | C=803.8894759083 | time=1.144171s | PRcalls=0 | PRtime=0.000000s | A_evals=1934 | S1_evals=3592 | A_accepted=31 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=  1346 | C=803.8894759083 | time=0.951620s | PRcalls=0 | PRtime=0.000000s | A_evals=2212 | S1_evals=3950 | A_accepted=36 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=411979 | C=803.8894759083 | time=0.808894s | PRcalls=0 | PRtime=0.000000s | A_evals=1912 | S1_evals=3760 | A_accepted=28 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=295898 | C=803.8894759083 | time=0.774351s | PRcalls=0 | PRtime=0.000000s | A_evals=1994 | S1_evals=3872 | A_accepted=30 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=269046 | C=803.8894759083 | time=0.659764s | PRcalls=0 | PRtime=0.000000s | A_evals=2060 | S1_evals=4178 | A_accepted=30 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=154485 | C=803.8894759083 | time=0.604610s | PRcalls=0 | PRtime=0.000000s | A_evals=1626 | S1_evals=3560 | A_accepted=21 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=171750 | C=803.8894759083 | time=0.601227s | PRcalls=0 | PRtime=0.000000s | A_evals=2248 | S1_evals=3672 | A_accepted=41 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=231105 | C=803.8894759083 | time=0.637718s | PRcalls=0 | PRtime=0.000000s | A_evals=2362 | S1_evals=4376 | A_accepted=37 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=317139 | C=803.8894759083 | time=0.614533s | PRcalls=0 | PRtime=0.000000s | A_evals=1806 | S1_evals=3564 | A_accepted=27 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed=409973 | C=803.8894759083 | time=0.648254s | PRcalls=0 | PRtime=0.000000s | A_evals=2160 | S1_evals=3642 | A_accepted=37 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a1p0_s1 | seed= 89335 | C=803.8894759083 | time=0.629387s | PRcalls=0 | PRtime=0.000000s | A_evals=1708 | S1_evals=3684 | A_accepted=23 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=183601 | C=1034.7825336526 | time=0.681403s | PRcalls=0 | PRtime=0.000000s | A_evals=2082 | S1_evals=5076 | A_accepted=24 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=122241 | C=1034.7825336526 | time=0.762108s | PRcalls=0 | PRtime=0.000000s | A_evals=2616 | S1_evals=5076 | A_accepted=41 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=347126 | C=1034.7825336526 | time=0.944250s | PRcalls=0 | PRtime=0.000000s | A_evals=1956 | S1_evals=4316 | A_accepted=26 | S1_accepted=22 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=420036 | C=1034.7825336526 | time=1.000860s | PRcalls=0 | PRtime=0.000000s | A_evals=2404 | S1_evals=5388 | A_accepted=32 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed= 22114 | C=1034.7825336526 | time=1.122836s | PRcalls=0 | PRtime=0.000000s | A_evals=2734 | S1_evals=5400 | A_accepted=43 | S1_accepted=32 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=384850 | C=1034.7825336526 | time=0.827100s | PRcalls=0 | PRtime=0.000000s | A_evals=2704 | S1_evals=6264 | A_accepted=34 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=435983 | C=1034.7825336526 | time=0.644150s | PRcalls=0 | PRtime=0.000000s | A_evals=2232 | S1_evals=5076 | A_accepted=29 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=134804 | C=1034.7825336526 | time=0.692334s | PRcalls=0 | PRtime=0.000000s | A_evals=2610 | S1_evals=5292 | A_accepted=42 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=172693 | C=1034.7825336526 | time=0.648374s | PRcalls=0 | PRtime=0.000000s | A_evals=2512 | S1_evals=4640 | A_accepted=41 | S1_accepted=25 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=210450 | C=1034.7825336526 | time=0.688474s | PRcalls=0 | PRtime=0.000000s | A_evals=2752 | S1_evals=5400 | A_accepted=42 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=171434 | C=1034.7825336526 | time=0.790134s | PRcalls=0 | PRtime=0.000000s | A_evals=2508 | S1_evals=5720 | A_accepted=33 | S1_accepted=35 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=187001 | C=1034.7825336526 | time=1.040894s | PRcalls=0 | PRtime=0.000000s | A_evals=2404 | S1_evals=4964 | A_accepted=36 | S1_accepted=28 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=133041 | C=1034.7825336526 | time=1.102582s | PRcalls=0 | PRtime=0.000000s | A_evals=2556 | S1_evals=5612 | A_accepted=34 | S1_accepted=34 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=328721 | C=1034.7825336526 | time=0.867007s | PRcalls=0 | PRtime=0.000000s | A_evals=2188 | S1_evals=5184 | A_accepted=26 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=497477 | C=1034.7825336526 | time=0.714509s | PRcalls=0 | PRtime=0.000000s | A_evals=2570 | S1_evals=5284 | A_accepted=38 | S1_accepted=31 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed= 91030 | C=1034.7825336526 | time=0.658871s | PRcalls=0 | PRtime=0.000000s | A_evals=2340 | S1_evals=5044 | A_accepted=31 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed= 87198 | C=1034.7825336526 | time=0.689579s | PRcalls=0 | PRtime=0.000000s | A_evals=2564 | S1_evals=5720 | A_accepted=33 | S1_accepted=35 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=205899 | C=1034.7825336526 | time=0.625834s | PRcalls=0 | PRtime=0.000000s | A_evals=2248 | S1_evals=4424 | A_accepted=35 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=400804 | C=1034.7825336526 | time=0.687736s | PRcalls=0 | PRtime=0.000000s | A_evals=2330 | S1_evals=5596 | A_accepted=27 | S1_accepted=34 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=237596 | C=1034.7825336526 | time=0.662305s | PRcalls=0 | PRtime=0.000000s | A_evals=2572 | S1_evals=4960 | A_accepted=40 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=  1346 | C=1034.7825336526 | time=0.695759s | PRcalls=0 | PRtime=0.000000s | A_evals=2734 | S1_evals=5712 | A_accepted=40 | S1_accepted=35 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=411979 | C=1034.7825336526 | time=0.731496s | PRcalls=0 | PRtime=0.000000s | A_evals=2412 | S1_evals=5724 | A_accepted=29 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=295898 | C=1034.7825336526 | time=1.081704s | PRcalls=0 | PRtime=0.000000s | A_evals=2652 | S1_evals=6028 | A_accepted=34 | S1_accepted=38 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=269046 | C=1034.7825336526 | time=1.015233s | PRcalls=0 | PRtime=0.000000s | A_evals=2098 | S1_evals=5280 | A_accepted=22 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=154485 | C=1034.7825336526 | time=0.920175s | PRcalls=0 | PRtime=0.000000s | A_evals=2742 | S1_evals=5928 | A_accepted=38 | S1_accepted=37 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=171750 | C=1034.7825336526 | time=0.673908s | PRcalls=0 | PRtime=0.000000s | A_evals=2556 | S1_evals=4624 | A_accepted=43 | S1_accepted=25 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=231105 | C=1034.7825336526 | time=0.690257s | PRcalls=0 | PRtime=0.000000s | A_evals=2578 | S1_evals=4428 | A_accepted=46 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=317139 | C=1034.7825336526 | time=0.977965s | PRcalls=0 | PRtime=0.000000s | A_evals=1992 | S1_evals=4968 | A_accepted=22 | S1_accepted=28 | audit=2.274e-13
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed=409973 | C=1034.7825336526 | time=1.026178s | PRcalls=0 | PRtime=0.000000s | A_evals=2278 | S1_evals=4968 | A_accepted=31 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N60_I30_K15_J15_P6_a2p0_s1 | seed= 89335 | C=1034.7825336526 | time=1.107071s | PRcalls=0 | PRtime=0.000000s | A_evals=2690 | S1_evals=5814 | A_accepted=37 | S1_accepted=36 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=183601 | C=781.7532001645 | time=1.621103s | PRcalls=0 | PRtime=0.000000s | A_evals=3936 | S1_evals=10400 | A_accepted=29 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=122241 | C=781.7532001645 | time=1.616294s | PRcalls=0 | PRtime=0.000000s | A_evals=4217 | S1_evals=11600 | A_accepted=29 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=347126 | C=781.7532001645 | time=1.579073s | PRcalls=0 | PRtime=0.000000s | A_evals=3746 | S1_evals=11000 | A_accepted=26 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=420036 | C=781.7532001645 | time=1.637692s | PRcalls=0 | PRtime=0.000000s | A_evals=3505 | S1_evals=10000 | A_accepted=22 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed= 22114 | C=781.7532001645 | time=2.122040s | PRcalls=0 | PRtime=0.000000s | A_evals=3636 | S1_evals=8600 | A_accepted=32 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=384850 | C=781.7532001645 | time=2.651690s | PRcalls=0 | PRtime=0.000000s | A_evals=3898 | S1_evals=9800 | A_accepted=32 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=435983 | C=781.7532001645 | time=2.392055s | PRcalls=0 | PRtime=0.000000s | A_evals=4322 | S1_evals=11000 | A_accepted=36 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=134804 | C=781.7532001645 | time=2.089482s | PRcalls=0 | PRtime=0.000000s | A_evals=3743 | S1_evals=8800 | A_accepted=32 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=172693 | C=781.7532001645 | time=1.760950s | PRcalls=0 | PRtime=0.000000s | A_evals=3655 | S1_evals=9400 | A_accepted=28 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=210450 | C=781.7532001645 | time=2.146739s | PRcalls=0 | PRtime=0.000000s | A_evals=3636 | S1_evals=9800 | A_accepted=26 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=171434 | C=781.7532001645 | time=2.235227s | PRcalls=0 | PRtime=0.000000s | A_evals=4010 | S1_evals=11000 | A_accepted=29 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=187001 | C=781.7532001645 | time=1.542729s | PRcalls=0 | PRtime=0.000000s | A_evals=3598 | S1_evals=10000 | A_accepted=25 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=133041 | C=781.7532001645 | time=1.545620s | PRcalls=0 | PRtime=0.000000s | A_evals=3903 | S1_evals=11200 | A_accepted=27 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=328721 | C=781.7532001645 | time=1.781032s | PRcalls=0 | PRtime=0.000000s | A_evals=3855 | S1_evals=9200 | A_accepted=33 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=497477 | C=781.7532001645 | time=2.125412s | PRcalls=0 | PRtime=0.000000s | A_evals=3710 | S1_evals=10400 | A_accepted=26 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed= 91030 | C=781.7532001645 | time=1.721292s | PRcalls=0 | PRtime=0.000000s | A_evals=3936 | S1_evals=8600 | A_accepted=38 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed= 87198 | C=781.7532001645 | time=1.585543s | PRcalls=0 | PRtime=0.000000s | A_evals=3248 | S1_evals=9800 | A_accepted=19 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=205899 | C=781.7532001645 | time=1.684913s | PRcalls=0 | PRtime=0.000000s | A_evals=3486 | S1_evals=10800 | A_accepted=18 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=400804 | C=781.7532001645 | time=1.491518s | PRcalls=0 | PRtime=0.000000s | A_evals=3643 | S1_evals=9000 | A_accepted=29 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=237596 | C=781.7532001645 | time=1.533310s | PRcalls=0 | PRtime=0.000000s | A_evals=3648 | S1_evals=9800 | A_accepted=27 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=  1346 | C=781.7532001645 | time=2.284853s | PRcalls=0 | PRtime=0.000000s | A_evals=3674 | S1_evals=10200 | A_accepted=24 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=411979 | C=781.7532001645 | time=2.708303s | PRcalls=0 | PRtime=0.000000s | A_evals=3648 | S1_evals=9000 | A_accepted=31 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=295898 | C=781.7532001645 | time=3.025383s | PRcalls=0 | PRtime=0.000000s | A_evals=3379 | S1_evals=9800 | A_accepted=22 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=269046 | C=781.7532001645 | time=1.617140s | PRcalls=0 | PRtime=0.000000s | A_evals=3555 | S1_evals=10000 | A_accepted=23 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=154485 | C=781.7532001645 | time=1.433159s | PRcalls=0 | PRtime=0.000000s | A_evals=3591 | S1_evals=8600 | A_accepted=33 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=171750 | C=781.7532001645 | time=1.454356s | PRcalls=0 | PRtime=0.000000s | A_evals=3724 | S1_evals=8800 | A_accepted=32 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=231105 | C=781.7532001645 | time=1.482303s | PRcalls=0 | PRtime=0.000000s | A_evals=3724 | S1_evals=9600 | A_accepted=28 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=317139 | C=781.7532001645 | time=1.607428s | PRcalls=0 | PRtime=0.000000s | A_evals=3898 | S1_evals=9600 | A_accepted=33 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed=409973 | C=781.7532001645 | time=1.593538s | PRcalls=0 | PRtime=0.000000s | A_evals=3829 | S1_evals=10800 | A_accepted=26 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a0p5_s1 | seed= 89335 | C=781.7532001645 | time=1.504729s | PRcalls=0 | PRtime=0.000000s | A_evals=3748 | S1_evals=10000 | A_accepted=28 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=183601 | C=1246.4804160905 | time=1.925029s | PRcalls=0 | PRtime=0.000000s | A_evals=3355 | S1_evals=10400 | A_accepted=17 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=122241 | C=1246.4804160905 | time=2.574324s | PRcalls=0 | PRtime=0.000000s | A_evals=4117 | S1_evals=10800 | A_accepted=31 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=347126 | C=1246.4804160905 | time=2.344501s | PRcalls=0 | PRtime=0.000000s | A_evals=4277 | S1_evals=12000 | A_accepted=32 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=420036 | C=1246.4804160905 | time=2.840557s | PRcalls=0 | PRtime=0.000000s | A_evals=3872 | S1_evals=11000 | A_accepted=27 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed= 22114 | C=1246.4804160905 | time=2.672260s | PRcalls=0 | PRtime=0.000000s | A_evals=3629 | S1_evals=10800 | A_accepted=22 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=384850 | C=1246.4804160905 | time=2.244310s | PRcalls=0 | PRtime=0.000000s | A_evals=3841 | S1_evals=11400 | A_accepted=24 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=435983 | C=1246.4804160905 | time=1.862233s | PRcalls=0 | PRtime=0.000000s | A_evals=3634 | S1_evals=11200 | A_accepted=22 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=134804 | C=1246.4804160905 | time=2.154252s | PRcalls=0 | PRtime=0.000000s | A_evals=3605 | S1_evals=9000 | A_accepted=29 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=172693 | C=1246.4804160905 | time=1.651185s | PRcalls=0 | PRtime=0.000000s | A_evals=3836 | S1_evals=11000 | A_accepted=24 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=210450 | C=1246.4804160905 | time=1.627835s | PRcalls=0 | PRtime=0.000000s | A_evals=4067 | S1_evals=12000 | A_accepted=24 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=171434 | C=1246.4804160905 | time=1.657007s | PRcalls=0 | PRtime=0.000000s | A_evals=3653 | S1_evals=9800 | A_accepted=29 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=187001 | C=1246.4804160905 | time=2.057719s | PRcalls=0 | PRtime=0.000000s | A_evals=3560 | S1_evals=9200 | A_accepted=29 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=133041 | C=1246.4804160905 | time=2.216860s | PRcalls=0 | PRtime=0.000000s | A_evals=4053 | S1_evals=9800 | A_accepted=37 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=328721 | C=1246.4804160905 | time=3.039195s | PRcalls=0 | PRtime=0.000000s | A_evals=4274 | S1_evals=9800 | A_accepted=38 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=497477 | C=1246.4804160905 | time=2.798135s | PRcalls=0 | PRtime=0.000000s | A_evals=4310 | S1_evals=12000 | A_accepted=30 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed= 91030 | C=1246.4804160905 | time=2.724370s | PRcalls=0 | PRtime=0.000000s | A_evals=3803 | S1_evals=11600 | A_accepted=23 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed= 87198 | C=1246.4804160905 | time=2.091282s | PRcalls=0 | PRtime=0.000000s | A_evals=3410 | S1_evals=10800 | A_accepted=18 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=205899 | C=1246.4804160905 | time=1.553849s | PRcalls=0 | PRtime=0.000000s | A_evals=3586 | S1_evals=10000 | A_accepted=24 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=400804 | C=1246.4804160905 | time=2.158181s | PRcalls=0 | PRtime=0.000000s | A_evals=3548 | S1_evals=9600 | A_accepted=26 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=237596 | C=1246.4804160905 | time=2.304915s | PRcalls=0 | PRtime=0.000000s | A_evals=4117 | S1_evals=10000 | A_accepted=35 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=  1346 | C=1246.4804160905 | time=2.295779s | PRcalls=0 | PRtime=0.000000s | A_evals=3555 | S1_evals=10600 | A_accepted=20 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=411979 | C=1246.4804160905 | time=2.575322s | PRcalls=0 | PRtime=0.000000s | A_evals=3948 | S1_evals=9800 | A_accepted=33 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=295898 | C=1246.4804160905 | time=2.319933s | PRcalls=0 | PRtime=0.000000s | A_evals=3793 | S1_evals=9400 | A_accepted=30 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=269046 | C=1246.4804160905 | time=2.471562s | PRcalls=0 | PRtime=0.000000s | A_evals=4010 | S1_evals=10800 | A_accepted=30 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=154485 | C=1246.4804160905 | time=2.308012s | PRcalls=0 | PRtime=0.000000s | A_evals=3691 | S1_evals=11000 | A_accepted=23 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=171750 | C=1246.4804160905 | time=2.418388s | PRcalls=0 | PRtime=0.000000s | A_evals=4255 | S1_evals=10600 | A_accepted=34 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=231105 | C=1246.4804160905 | time=1.562081s | PRcalls=0 | PRtime=0.000000s | A_evals=4374 | S1_evals=10200 | A_accepted=38 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=317139 | C=1246.4804160905 | time=2.425541s | PRcalls=0 | PRtime=0.000000s | A_evals=4167 | S1_evals=10400 | A_accepted=34 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed=409973 | C=1246.4804160905 | time=2.067369s | PRcalls=0 | PRtime=0.000000s | A_evals=3848 | S1_evals=11200 | A_accepted=24 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a1p0_s1 | seed= 89335 | C=1246.4804160905 | time=1.552589s | PRcalls=0 | PRtime=0.000000s | A_evals=3860 | S1_evals=10200 | A_accepted=30 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=183601 | C=1673.7949660186 | time=3.135362s | PRcalls=0 | PRtime=0.000000s | A_evals=3674 | S1_evals=13200 | A_accepted=9 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=122241 | C=1673.7949660186 | time=2.308414s | PRcalls=0 | PRtime=0.000000s | A_evals=4229 | S1_evals=12200 | A_accepted=27 | S1_accepted=43 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=347126 | C=1673.7949660186 | time=1.713343s | PRcalls=0 | PRtime=0.000000s | A_evals=3877 | S1_evals=12400 | A_accepted=22 | S1_accepted=44 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=420036 | C=1673.7949660186 | time=1.760341s | PRcalls=0 | PRtime=0.000000s | A_evals=3953 | S1_evals=12200 | A_accepted=23 | S1_accepted=43 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed= 22114 | C=1673.7949660186 | time=3.124638s | PRcalls=0 | PRtime=0.000000s | A_evals=3748 | S1_evals=11200 | A_accepted=22 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=384850 | C=1673.7949660186 | time=2.362340s | PRcalls=0 | PRtime=0.000000s | A_evals=3936 | S1_evals=11600 | A_accepted=23 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=435983 | C=1673.7949660186 | time=2.950292s | PRcalls=0 | PRtime=0.000000s | A_evals=3984 | S1_evals=13800 | A_accepted=16 | S1_accepted=51 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=134804 | C=1673.7949660186 | time=2.625950s | PRcalls=0 | PRtime=0.000000s | A_evals=4129 | S1_evals=13200 | A_accepted=20 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=172693 | C=1673.7949660186 | time=1.696215s | PRcalls=0 | PRtime=0.000000s | A_evals=4005 | S1_evals=11400 | A_accepted=25 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=210450 | C=1673.7949660186 | time=3.662912s | PRcalls=0 | PRtime=0.000000s | A_evals=3767 | S1_evals=12800 | A_accepted=14 | S1_accepted=46 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=171434 | C=1673.7949660186 | time=2.055864s | PRcalls=0 | PRtime=0.000000s | A_evals=3991 | S1_evals=12600 | A_accepted=21 | S1_accepted=45 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=187001 | C=1673.7949660186 | time=1.596453s | PRcalls=0 | PRtime=0.000000s | A_evals=3448 | S1_evals=10600 | A_accepted=19 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=133041 | C=1673.7949660186 | time=1.696201s | PRcalls=0 | PRtime=0.000000s | A_evals=4403 | S1_evals=13200 | A_accepted=27 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=328721 | C=1673.7949660186 | time=1.600979s | PRcalls=0 | PRtime=0.000000s | A_evals=3922 | S1_evals=12000 | A_accepted=23 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=497477 | C=1673.7949660186 | time=1.543994s | PRcalls=0 | PRtime=0.000000s | A_evals=3960 | S1_evals=11000 | A_accepted=28 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed= 91030 | C=1673.7949660186 | time=1.753131s | PRcalls=0 | PRtime=0.000000s | A_evals=3998 | S1_evals=13200 | A_accepted=17 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed= 87198 | C=1673.7949660186 | time=1.776572s | PRcalls=0 | PRtime=0.000000s | A_evals=3429 | S1_evals=11200 | A_accepted=16 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=205899 | C=1673.7949660186 | time=2.270879s | PRcalls=0 | PRtime=0.000000s | A_evals=4198 | S1_evals=12200 | A_accepted=26 | S1_accepted=43 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=400804 | C=1673.7949660186 | time=1.830371s | PRcalls=0 | PRtime=0.000000s | A_evals=3748 | S1_evals=11600 | A_accepted=20 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=237596 | C=1673.7949660186 | time=2.557226s | PRcalls=0 | PRtime=0.000000s | A_evals=4367 | S1_evals=12600 | A_accepted=27 | S1_accepted=45 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=  1346 | C=1673.7949660186 | time=1.514274s | PRcalls=0 | PRtime=0.000000s | A_evals=3255 | S1_evals=10200 | A_accepted=16 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=411979 | C=1673.7949660186 | time=1.691137s | PRcalls=0 | PRtime=0.000000s | A_evals=4017 | S1_evals=12400 | A_accepted=21 | S1_accepted=44 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=295898 | C=1673.7949660186 | time=1.582953s | PRcalls=0 | PRtime=0.000000s | A_evals=3629 | S1_evals=11200 | A_accepted=20 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=269046 | C=1673.7949660186 | time=1.692136s | PRcalls=0 | PRtime=0.000000s | A_evals=3748 | S1_evals=11200 | A_accepted=22 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=154485 | C=1673.7949660186 | time=2.313289s | PRcalls=0 | PRtime=0.000000s | A_evals=3841 | S1_evals=12400 | A_accepted=19 | S1_accepted=44 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=171750 | C=1673.7949660186 | time=1.673248s | PRcalls=0 | PRtime=0.000000s | A_evals=3936 | S1_evals=11400 | A_accepted=24 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=231105 | C=1673.7949660186 | time=2.234179s | PRcalls=0 | PRtime=0.000000s | A_evals=4112 | S1_evals=11000 | A_accepted=28 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=317139 | C=1673.7949660186 | time=1.655972s | PRcalls=0 | PRtime=0.000000s | A_evals=3479 | S1_evals=11200 | A_accepted=17 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed=409973 | C=1673.7949660186 | time=2.226581s | PRcalls=0 | PRtime=0.000000s | A_evals=3598 | S1_evals=11400 | A_accepted=18 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P5_a2p0_s1 | seed= 89335 | C=1673.7949660186 | time=2.454433s | PRcalls=0 | PRtime=0.000000s | A_evals=3979 | S1_evals=12400 | A_accepted=21 | S1_accepted=44 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=183601 | C=840.5944529551 | time=3.151255s | PRcalls=0 | PRtime=0.000000s | A_evals=5458 | S1_evals=9568 | A_accepted=70 | S1_accepted=22 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=122241 | C=840.5944529551 | time=3.351209s | PRcalls=0 | PRtime=0.000000s | A_evals=5836 | S1_evals=9768 | A_accepted=76 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=347126 | C=840.5944529551 | time=3.601461s | PRcalls=0 | PRtime=0.000000s | A_evals=6322 | S1_evals=10906 | A_accepted=80 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=420036 | C=840.5944529551 | time=3.684270s | PRcalls=0 | PRtime=0.000000s | A_evals=6144 | S1_evals=11214 | A_accepted=77 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed= 22114 | C=840.5944529551 | time=2.439174s | PRcalls=0 | PRtime=0.000000s | A_evals=5522 | S1_evals=8562 | A_accepted=75 | S1_accepted=18 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=384850 | C=840.5944529551 | time=2.438999s | PRcalls=0 | PRtime=0.000000s | A_evals=5936 | S1_evals=9236 | A_accepted=80 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=435983 | C=840.5944529551 | time=4.713076s | PRcalls=0 | PRtime=0.000000s | A_evals=5872 | S1_evals=9248 | A_accepted=80 | S1_accepted=20 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=134804 | C=840.5944529551 | time=2.159417s | PRcalls=0 | PRtime=0.000000s | A_evals=5836 | S1_evals=9728 | A_accepted=76 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=172693 | C=840.5944529551 | time=2.167782s | PRcalls=0 | PRtime=0.000000s | A_evals=5886 | S1_evals=9490 | A_accepted=78 | S1_accepted=22 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=210450 | C=840.5944529551 | time=2.204005s | PRcalls=0 | PRtime=0.000000s | A_evals=5986 | S1_evals=9542 | A_accepted=80 | S1_accepted=22 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=171434 | C=840.5944529551 | time=2.269714s | PRcalls=0 | PRtime=0.000000s | A_evals=5958 | S1_evals=9870 | A_accepted=79 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=187001 | C=840.5944529551 | time=2.154592s | PRcalls=0 | PRtime=0.000000s | A_evals=6194 | S1_evals=10724 | A_accepted=80 | S1_accepted=27 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=133041 | C=840.5944529551 | time=2.259674s | PRcalls=0 | PRtime=0.000000s | A_evals=6100 | S1_evals=10122 | A_accepted=80 | S1_accepted=24 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=328721 | C=840.5944529551 | time=2.208454s | PRcalls=0 | PRtime=0.000000s | A_evals=5708 | S1_evals=9048 | A_accepted=77 | S1_accepted=20 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=497477 | C=840.5944529551 | time=3.038945s | PRcalls=0 | PRtime=0.000000s | A_evals=5750 | S1_evals=8938 | A_accepted=77 | S1_accepted=20 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed= 91030 | C=840.5944529551 | time=2.346463s | PRcalls=0 | PRtime=0.000000s | A_evals=5600 | S1_evals=8166 | A_accepted=77 | S1_accepted=17 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed= 87198 | C=840.5944529551 | time=2.439252s | PRcalls=0 | PRtime=0.000000s | A_evals=5550 | S1_evals=8812 | A_accepted=73 | S1_accepted=20 | audit=3.411e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=205899 | C=840.5944529551 | time=2.096543s | PRcalls=0 | PRtime=0.000000s | A_evals=5400 | S1_evals=8216 | A_accepted=73 | S1_accepted=17 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=400804 | C=840.5944529551 | time=2.127833s | PRcalls=0 | PRtime=0.000000s | A_evals=5722 | S1_evals=8032 | A_accepted=81 | S1_accepted=16 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=237596 | C=840.5944529551 | time=2.099938s | PRcalls=0 | PRtime=0.000000s | A_evals=5772 | S1_evals=9280 | A_accepted=77 | S1_accepted=21 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=  1346 | C=840.5944529551 | time=2.115715s | PRcalls=0 | PRtime=0.000000s | A_evals=5536 | S1_evals=9212 | A_accepted=72 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=411979 | C=840.5944529551 | time=2.119885s | PRcalls=0 | PRtime=0.000000s | A_evals=5550 | S1_evals=10282 | A_accepted=68 | S1_accepted=25 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=295898 | C=840.5944529551 | time=2.052256s | PRcalls=0 | PRtime=0.000000s | A_evals=5586 | S1_evals=9248 | A_accepted=73 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=269046 | C=840.5944529551 | time=2.092781s | PRcalls=0 | PRtime=0.000000s | A_evals=5986 | S1_evals=9186 | A_accepted=81 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=154485 | C=840.5944529551 | time=2.208756s | PRcalls=0 | PRtime=0.000000s | A_evals=6058 | S1_evals=11572 | A_accepted=74 | S1_accepted=30 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=171750 | C=840.5944529551 | time=2.069390s | PRcalls=0 | PRtime=0.000000s | A_evals=5808 | S1_evals=10068 | A_accepted=75 | S1_accepted=24 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=231105 | C=840.5944529551 | time=2.140844s | PRcalls=0 | PRtime=0.000000s | A_evals=5672 | S1_evals=9246 | A_accepted=75 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=317139 | C=840.5944529551 | time=2.190330s | PRcalls=0 | PRtime=0.000000s | A_evals=5500 | S1_evals=10496 | A_accepted=66 | S1_accepted=26 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed=409973 | C=840.5944529551 | time=3.084725s | PRcalls=0 | PRtime=0.000000s | A_evals=5708 | S1_evals=8344 | A_accepted=79 | S1_accepted=18 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a0p5_s1 | seed= 89335 | C=840.5944529551 | time=2.236839s | PRcalls=0 | PRtime=0.000000s | A_evals=5636 | S1_evals=9800 | A_accepted=72 | S1_accepted=23 | audit=1.137e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=183601 | C=1306.4965323329 | time=2.832014s | PRcalls=2 | PRtime=0.007275s | A_evals=4108 | S1_evals=9994 | A_accepted=45 | S1_accepted=18 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=122241 | C=1306.4965323329 | time=4.188832s | PRcalls=2 | PRtime=0.002422s | A_evals=4458 | S1_evals=10554 | A_accepted=49 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=347126 | C=1306.4965323329 | time=2.516097s | PRcalls=2 | PRtime=0.003345s | A_evals=3872 | S1_evals=10284 | A_accepted=40 | S1_accepted=18 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=420036 | C=1306.4965323329 | time=3.095892s | PRcalls=2 | PRtime=0.002700s | A_evals=5244 | S1_evals=11706 | A_accepted=62 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed= 22114 | C=1306.4965323329 | time=1.976508s | PRcalls=2 | PRtime=0.002436s | A_evals=4222 | S1_evals=8916 | A_accepted=52 | S1_accepted=13 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=384850 | C=1306.4965323329 | time=2.067130s | PRcalls=2 | PRtime=0.002390s | A_evals=4922 | S1_evals=9720 | A_accepted=61 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=435983 | C=1306.4965323329 | time=2.129954s | PRcalls=2 | PRtime=0.002434s | A_evals=4672 | S1_evals=9102 | A_accepted=59 | S1_accepted=15 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=134804 | C=1306.4965323329 | time=2.103463s | PRcalls=0 | PRtime=0.000000s | A_evals=5136 | S1_evals=10208 | A_accepted=64 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=172693 | C=1306.4965323329 | time=2.127773s | PRcalls=2 | PRtime=0.002493s | A_evals=5236 | S1_evals=10066 | A_accepted=66 | S1_accepted=19 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=210450 | C=1306.4965323329 | time=2.137207s | PRcalls=2 | PRtime=0.002582s | A_evals=4672 | S1_evals=10492 | A_accepted=54 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=171434 | C=1306.4965323329 | time=2.100442s | PRcalls=2 | PRtime=0.002709s | A_evals=4386 | S1_evals=11112 | A_accepted=47 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=187001 | C=1306.4965323329 | time=2.947849s | PRcalls=2 | PRtime=0.002274s | A_evals=5094 | S1_evals=11236 | A_accepted=60 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=133041 | C=1306.4965323329 | time=2.591192s | PRcalls=2 | PRtime=0.002597s | A_evals=4800 | S1_evals=9038 | A_accepted=62 | S1_accepted=14 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=328721 | C=1306.4965323329 | time=2.293117s | PRcalls=2 | PRtime=0.002275s | A_evals=4358 | S1_evals=11352 | A_accepted=47 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=497477 | C=1306.4965323329 | time=2.999264s | PRcalls=2 | PRtime=0.002092s | A_evals=5472 | S1_evals=13024 | A_accepted=61 | S1_accepted=29 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed= 91030 | C=1306.4965323329 | time=2.445648s | PRcalls=2 | PRtime=0.002433s | A_evals=4386 | S1_evals=11564 | A_accepted=46 | S1_accepted=22 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed= 87198 | C=1306.4965323329 | time=2.433518s | PRcalls=2 | PRtime=0.003679s | A_evals=4450 | S1_evals=7230 | A_accepted=61 | S1_accepted=8 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=205899 | C=1306.4965323329 | time=2.970741s | PRcalls=2 | PRtime=0.004020s | A_evals=4086 | S1_evals=8430 | A_accepted=49 | S1_accepted=13 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=400804 | C=1306.4965323329 | time=2.253987s | PRcalls=2 | PRtime=0.002110s | A_evals=4044 | S1_evals=10030 | A_accepted=45 | S1_accepted=17 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=237596 | C=1306.4965323329 | time=2.053155s | PRcalls=2 | PRtime=0.002092s | A_evals=4436 | S1_evals=7982 | A_accepted=58 | S1_accepted=11 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=  1346 | C=1306.4965323329 | time=2.122365s | PRcalls=2 | PRtime=0.002805s | A_evals=5236 | S1_evals=10560 | A_accepted=63 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=411979 | C=1306.4965323329 | time=2.163196s | PRcalls=2 | PRtime=0.002118s | A_evals=4950 | S1_evals=11606 | A_accepted=55 | S1_accepted=24 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=295898 | C=1306.4965323329 | time=2.185789s | PRcalls=2 | PRtime=0.001671s | A_evals=4400 | S1_evals=10234 | A_accepted=50 | S1_accepted=18 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=269046 | C=1306.4965323329 | time=1.990084s | PRcalls=2 | PRtime=0.002012s | A_evals=4236 | S1_evals=9466 | A_accepted=49 | S1_accepted=16 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=154485 | C=1306.4965323329 | time=2.145272s | PRcalls=2 | PRtime=0.001842s | A_evals=5136 | S1_evals=10694 | A_accepted=62 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=171750 | C=1306.4965323329 | time=2.846346s | PRcalls=2 | PRtime=0.003612s | A_evals=4258 | S1_evals=9590 | A_accepted=50 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=231105 | C=1306.4965323329 | time=3.245683s | PRcalls=2 | PRtime=0.003041s | A_evals=5336 | S1_evals=10718 | A_accepted=66 | S1_accepted=21 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=317139 | C=1306.4965323329 | time=2.183219s | PRcalls=2 | PRtime=0.001209s | A_evals=4550 | S1_evals=9758 | A_accepted=55 | S1_accepted=16 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed=409973 | C=1306.4965323329 | time=2.117321s | PRcalls=2 | PRtime=0.002939s | A_evals=4658 | S1_evals=9426 | A_accepted=57 | S1_accepted=17 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a1p0_s1 | seed= 89335 | C=1306.4965323329 | time=2.096214s | PRcalls=2 | PRtime=0.003258s | A_evals=4008 | S1_evals=9780 | A_accepted=45 | S1_accepted=16 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=183601 | C=1735.9630845606 | time=3.124011s | PRcalls=0 | PRtime=0.000000s | A_evals=4522 | S1_evals=12870 | A_accepted=48 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=122241 | C=1735.9630845606 | time=3.723083s | PRcalls=0 | PRtime=0.000000s | A_evals=4124 | S1_evals=12846 | A_accepted=42 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=347126 | C=1735.9630845606 | time=3.470053s | PRcalls=0 | PRtime=0.000000s | A_evals=4838 | S1_evals=14928 | A_accepted=49 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=420036 | C=1735.9630845606 | time=2.984912s | PRcalls=0 | PRtime=0.000000s | A_evals=4316 | S1_evals=12870 | A_accepted=45 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed= 22114 | C=1735.9630845606 | time=2.420692s | PRcalls=0 | PRtime=0.000000s | A_evals=4988 | S1_evals=13776 | A_accepted=56 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=384850 | C=1735.9630845606 | time=2.607899s | PRcalls=0 | PRtime=0.000000s | A_evals=4444 | S1_evals=11994 | A_accepted=50 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=435983 | C=1735.9630845606 | time=2.224208s | PRcalls=0 | PRtime=0.000000s | A_evals=4872 | S1_evals=12520 | A_accepted=56 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=134804 | C=1735.9630845606 | time=3.068794s | PRcalls=0 | PRtime=0.000000s | A_evals=3972 | S1_evals=11052 | A_accepted=43 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=172693 | C=1735.9630845606 | time=3.073299s | PRcalls=0 | PRtime=0.000000s | A_evals=4630 | S1_evals=14376 | A_accepted=46 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=210450 | C=1735.9630845606 | time=2.947345s | PRcalls=0 | PRtime=0.000000s | A_evals=4830 | S1_evals=11292 | A_accepted=60 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=171434 | C=1735.9630845606 | time=3.197933s | PRcalls=0 | PRtime=0.000000s | A_evals=4908 | S1_evals=13428 | A_accepted=54 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=187001 | C=1735.9630845606 | time=2.849700s | PRcalls=0 | PRtime=0.000000s | A_evals=4494 | S1_evals=12196 | A_accepted=50 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=133041 | C=1735.9630845606 | time=2.389732s | PRcalls=0 | PRtime=0.000000s | A_evals=4702 | S1_evals=15570 | A_accepted=44 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=328721 | C=1735.9630845606 | time=2.840101s | PRcalls=0 | PRtime=0.000000s | A_evals=5080 | S1_evals=14052 | A_accepted=56 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=497477 | C=1735.9630845606 | time=2.870436s | PRcalls=0 | PRtime=0.000000s | A_evals=4472 | S1_evals=15404 | A_accepted=38 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed= 91030 | C=1735.9630845606 | time=2.590988s | PRcalls=0 | PRtime=0.000000s | A_evals=4900 | S1_evals=13446 | A_accepted=53 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed= 87198 | C=1735.9630845606 | time=2.697090s | PRcalls=0 | PRtime=0.000000s | A_evals=4944 | S1_evals=14340 | A_accepted=52 | S1_accepted=30 | audit=2.274e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=205899 | C=1735.9630845606 | time=3.641028s | PRcalls=0 | PRtime=0.000000s | A_evals=4886 | S1_evals=13966 | A_accepted=51 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=400804 | C=1735.9630845606 | time=2.362312s | PRcalls=0 | PRtime=0.000000s | A_evals=4588 | S1_evals=15270 | A_accepted=43 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=237596 | C=1735.9630845606 | time=2.239498s | PRcalls=0 | PRtime=0.000000s | A_evals=4386 | S1_evals=13456 | A_accepted=43 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=  1346 | C=1735.9630845606 | time=2.274842s | PRcalls=0 | PRtime=0.000000s | A_evals=4766 | S1_evals=14040 | A_accepted=50 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=411979 | C=1735.9630845606 | time=2.308386s | PRcalls=0 | PRtime=0.000000s | A_evals=4408 | S1_evals=13158 | A_accepted=45 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=295898 | C=1735.9630845606 | time=2.311238s | PRcalls=0 | PRtime=0.000000s | A_evals=4200 | S1_evals=11352 | A_accepted=46 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=269046 | C=1735.9630845606 | time=2.626857s | PRcalls=0 | PRtime=0.000000s | A_evals=4824 | S1_evals=14624 | A_accepted=50 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=154485 | C=1735.9630845606 | time=3.771764s | PRcalls=0 | PRtime=0.000000s | A_evals=4624 | S1_evals=14328 | A_accepted=47 | S1_accepted=30 | audit=4.547e-13
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=171750 | C=1735.9630845606 | time=2.461726s | PRcalls=0 | PRtime=0.000000s | A_evals=4358 | S1_evals=15832 | A_accepted=35 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=231105 | C=1735.9630845606 | time=2.377901s | PRcalls=0 | PRtime=0.000000s | A_evals=5322 | S1_evals=14626 | A_accepted=58 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=317139 | C=1735.9630845606 | time=2.291718s | PRcalls=0 | PRtime=0.000000s | A_evals=4822 | S1_evals=14982 | A_accepted=47 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed=409973 | C=1735.9630845606 | time=2.203825s | PRcalls=0 | PRtime=0.000000s | A_evals=4144 | S1_evals=12558 | A_accepted=42 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N100_I50_K25_J25_P10_a2p0_s1 | seed= 89335 | C=1735.9630845606 | time=2.939915s | PRcalls=0 | PRtime=0.000000s | A_evals=4094 | S1_evals=12252 | A_accepted=42 | S1_accepted=23 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=183601 | C=1771.3363540022 | time=12.679249s | PRcalls=0 | PRtime=0.000000s | A_evals=7210 | S1_evals=42400 | A_accepted=23 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=122241 | C=1771.3363540022 | time=11.647047s | PRcalls=0 | PRtime=0.000000s | A_evals=8332 | S1_evals=45600 | A_accepted=31 | S1_accepted=39 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=347126 | C=1771.3363540022 | time=11.913058s | PRcalls=0 | PRtime=0.000000s | A_evals=7688 | S1_evals=43200 | A_accepted=26 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=420036 | C=1771.3363540022 | time=11.930989s | PRcalls=0 | PRtime=0.000000s | A_evals=7754 | S1_evals=47200 | A_accepted=24 | S1_accepted=41 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed= 22114 | C=1771.3363540022 | time=11.331677s | PRcalls=0 | PRtime=0.000000s | A_evals=7332 | S1_evals=43200 | A_accepted=24 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=384850 | C=1771.3363540022 | time=11.437021s | PRcalls=0 | PRtime=0.000000s | A_evals=7949 | S1_evals=45600 | A_accepted=26 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=435983 | C=1771.3363540022 | time=11.563520s | PRcalls=0 | PRtime=0.000000s | A_evals=7766 | S1_evals=41600 | A_accepted=28 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=134804 | C=1771.3363540022 | time=11.823620s | PRcalls=0 | PRtime=0.000000s | A_evals=6927 | S1_evals=41600 | A_accepted=20 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=172693 | C=1771.3363540022 | time=11.511921s | PRcalls=0 | PRtime=0.000000s | A_evals=7227 | S1_evals=38400 | A_accepted=27 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=210450 | C=1771.3363540022 | time=11.996793s | PRcalls=0 | PRtime=0.000000s | A_evals=7949 | S1_evals=48000 | A_accepted=23 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=171434 | C=1771.3363540022 | time=11.254050s | PRcalls=0 | PRtime=0.000000s | A_evals=7266 | S1_evals=41600 | A_accepted=23 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=187001 | C=1771.3363540022 | time=11.555132s | PRcalls=0 | PRtime=0.000000s | A_evals=7488 | S1_evals=46400 | A_accepted=20 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=133041 | C=1771.3363540022 | time=11.977964s | PRcalls=0 | PRtime=0.000000s | A_evals=7705 | S1_evals=39200 | A_accepted=30 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=328721 | C=1771.3363540022 | time=11.426227s | PRcalls=0 | PRtime=0.000000s | A_evals=7710 | S1_evals=44000 | A_accepted=26 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=497477 | C=1771.3363540022 | time=12.043606s | PRcalls=0 | PRtime=0.000000s | A_evals=7871 | S1_evals=43200 | A_accepted=29 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed= 91030 | C=1771.3363540022 | time=11.461167s | PRcalls=0 | PRtime=0.000000s | A_evals=8249 | S1_evals=40800 | A_accepted=35 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed= 87198 | C=1771.3363540022 | time=11.391112s | PRcalls=0 | PRtime=0.000000s | A_evals=7671 | S1_evals=46400 | A_accepted=23 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=205899 | C=1771.3363540022 | time=12.488195s | PRcalls=0 | PRtime=0.000000s | A_evals=7527 | S1_evals=43200 | A_accepted=24 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=400804 | C=1771.3363540022 | time=11.353107s | PRcalls=0 | PRtime=0.000000s | A_evals=8327 | S1_evals=41600 | A_accepted=34 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=237596 | C=1771.3363540022 | time=11.316686s | PRcalls=0 | PRtime=0.000000s | A_evals=7527 | S1_evals=41600 | A_accepted=26 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=  1346 | C=1771.3363540022 | time=12.199832s | PRcalls=0 | PRtime=0.000000s | A_evals=7032 | S1_evals=48800 | A_accepted=14 | S1_accepted=43 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=411979 | C=1771.3363540022 | time=11.614991s | PRcalls=0 | PRtime=0.000000s | A_evals=7315 | S1_evals=45600 | A_accepted=22 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=295898 | C=1771.3363540022 | time=11.403962s | PRcalls=0 | PRtime=0.000000s | A_evals=7566 | S1_evals=34400 | A_accepted=35 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=269046 | C=1771.3363540022 | time=11.776136s | PRcalls=0 | PRtime=0.000000s | A_evals=6993 | S1_evals=41600 | A_accepted=23 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=154485 | C=1771.3363540022 | time=11.092784s | PRcalls=0 | PRtime=0.000000s | A_evals=7271 | S1_evals=42400 | A_accepted=24 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=171750 | C=1771.3363540022 | time=12.005020s | PRcalls=0 | PRtime=0.000000s | A_evals=7049 | S1_evals=40800 | A_accepted=23 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=231105 | C=1771.3363540022 | time=11.505226s | PRcalls=0 | PRtime=0.000000s | A_evals=7949 | S1_evals=46400 | A_accepted=25 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=317139 | C=1771.3363540022 | time=12.213037s | PRcalls=0 | PRtime=0.000000s | A_evals=7144 | S1_evals=38400 | A_accepted=25 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed=409973 | C=1771.3363540022 | time=11.116380s | PRcalls=0 | PRtime=0.000000s | A_evals=7505 | S1_evals=40800 | A_accepted=26 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a0p5_s1 | seed= 89335 | C=1771.3363540022 | time=11.782567s | PRcalls=0 | PRtime=0.000000s | A_evals=7637 | S1_evals=41600 | A_accepted=31 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=183601 | C=2853.3487195921 | time=12.179553s | PRcalls=0 | PRtime=0.000000s | A_evals=7471 | S1_evals=33600 | A_accepted=37 | S1_accepted=24 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=122241 | C=2853.3487195921 | time=11.241885s | PRcalls=0 | PRtime=0.000000s | A_evals=8554 | S1_evals=38400 | A_accepted=43 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=347126 | C=2853.3487195921 | time=12.167760s | PRcalls=0 | PRtime=0.000000s | A_evals=8088 | S1_evals=39938 | A_accepted=34 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=420036 | C=2853.3487195921 | time=11.305449s | PRcalls=0 | PRtime=0.000000s | A_evals=8249 | S1_evals=35200 | A_accepted=42 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed= 22114 | C=2853.3487195921 | time=11.463755s | PRcalls=0 | PRtime=0.000000s | A_evals=8132 | S1_evals=43200 | A_accepted=32 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=384850 | C=2853.3487195921 | time=10.952925s | PRcalls=0 | PRtime=0.000000s | A_evals=8849 | S1_evals=36800 | A_accepted=46 | S1_accepted=28 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=435983 | C=2853.3487195921 | time=10.890658s | PRcalls=0 | PRtime=0.000000s | A_evals=8605 | S1_evals=31200 | A_accepted=49 | S1_accepted=21 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=134804 | C=2853.3487195921 | time=11.520518s | PRcalls=0 | PRtime=0.000000s | A_evals=7549 | S1_evals=39200 | A_accepted=30 | S1_accepted=31 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=172693 | C=2853.3487195921 | time=11.237949s | PRcalls=0 | PRtime=0.000000s | A_evals=9327 | S1_evals=34400 | A_accepted=53 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=210450 | C=2853.3487195921 | time=10.439810s | PRcalls=0 | PRtime=0.000000s | A_evals=8027 | S1_evals=30400 | A_accepted=45 | S1_accepted=20 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=171434 | C=2853.3487195921 | time=11.474271s | PRcalls=0 | PRtime=0.000000s | A_evals=7566 | S1_evals=37600 | A_accepted=31 | S1_accepted=29 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=187001 | C=2853.3487195921 | time=11.366723s | PRcalls=0 | PRtime=0.000000s | A_evals=8610 | S1_evals=38400 | A_accepted=42 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=133041 | C=2853.3487195921 | time=11.235949s | PRcalls=0 | PRtime=0.000000s | A_evals=8744 | S1_evals=34307 | A_accepted=46 | S1_accepted=25 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=328721 | C=2853.3487195921 | time=10.955333s | PRcalls=0 | PRtime=0.000000s | A_evals=8610 | S1_evals=36800 | A_accepted=44 | S1_accepted=28 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=497477 | C=2853.3487195921 | time=13.274559s | PRcalls=0 | PRtime=0.000000s | A_evals=8671 | S1_evals=38400 | A_accepted=43 | S1_accepted=30 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed= 91030 | C=2853.3487195921 | time=10.563824s | PRcalls=0 | PRtime=0.000000s | A_evals=8149 | S1_evals=35200 | A_accepted=41 | S1_accepted=26 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed= 87198 | C=2853.3487195921 | time=12.063300s | PRcalls=0 | PRtime=0.000000s | A_evals=8971 | S1_evals=40800 | A_accepted=43 | S1_accepted=33 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=205899 | C=2853.3487195921 | time=11.181520s | PRcalls=0 | PRtime=0.000000s | A_evals=7027 | S1_evals=36000 | A_accepted=28 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=400804 | C=2853.3487195921 | time=11.924874s | PRcalls=0 | PRtime=0.000000s | A_evals=8649 | S1_evals=38400 | A_accepted=42 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=237596 | C=2853.3487195921 | time=10.476910s | PRcalls=0 | PRtime=0.000000s | A_evals=8171 | S1_evals=32800 | A_accepted=45 | S1_accepted=23 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=  1346 | C=2853.3487195921 | time=10.736828s | PRcalls=0 | PRtime=0.000000s | A_evals=7666 | S1_evals=37600 | A_accepted=32 | S1_accepted=29 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=411979 | C=2853.3487195921 | time=11.774239s | PRcalls=0 | PRtime=0.000000s | A_evals=8493 | S1_evals=41600 | A_accepted=38 | S1_accepted=34 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=295898 | C=2853.3487195921 | time=9.860648s | PRcalls=0 | PRtime=0.000000s | A_evals=8022 | S1_evals=32000 | A_accepted=41 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=269046 | C=2853.3487195921 | time=11.770127s | PRcalls=0 | PRtime=0.000000s | A_evals=8354 | S1_evals=35874 | A_accepted=44 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=154485 | C=2853.3487195921 | time=11.106678s | PRcalls=0 | PRtime=0.000000s | A_evals=7532 | S1_evals=36800 | A_accepted=34 | S1_accepted=28 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=171750 | C=2853.3487195921 | time=11.506283s | PRcalls=0 | PRtime=0.000000s | A_evals=8132 | S1_evals=35169 | A_accepted=42 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=231105 | C=2853.3487195921 | time=11.174329s | PRcalls=0 | PRtime=0.000000s | A_evals=8749 | S1_evals=38400 | A_accepted=43 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=317139 | C=2853.3487195921 | time=11.106025s | PRcalls=0 | PRtime=0.000000s | A_evals=7366 | S1_evals=37600 | A_accepted=29 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed=409973 | C=2853.3487195921 | time=11.162851s | PRcalls=0 | PRtime=0.000000s | A_evals=7727 | S1_evals=35200 | A_accepted=36 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a1p0_s1 | seed= 89335 | C=2853.3487195921 | time=11.732609s | PRcalls=0 | PRtime=0.000000s | A_evals=8837 | S1_evals=38400 | A_accepted=47 | S1_accepted=30 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=183601 | C=4016.7443311889 | time=13.031862s | PRcalls=0 | PRtime=0.000000s | A_evals=9371 | S1_evals=45600 | A_accepted=41 | S1_accepted=39 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=122241 | C=4016.7443311889 | time=11.621278s | PRcalls=0 | PRtime=0.000000s | A_evals=9532 | S1_evals=48800 | A_accepted=39 | S1_accepted=43 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=347126 | C=4016.7443311889 | time=11.761535s | PRcalls=0 | PRtime=0.000000s | A_evals=9610 | S1_evals=48000 | A_accepted=40 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=420036 | C=4016.7443311889 | time=11.480554s | PRcalls=0 | PRtime=0.000000s | A_evals=8349 | S1_evals=44800 | A_accepted=31 | S1_accepted=38 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed= 22114 | C=4016.7443311889 | time=12.122367s | PRcalls=0 | PRtime=0.000000s | A_evals=8632 | S1_evals=47200 | A_accepted=32 | S1_accepted=41 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=384850 | C=4016.7443311889 | time=11.388533s | PRcalls=0 | PRtime=0.000000s | A_evals=7649 | S1_evals=38400 | A_accepted=32 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=435983 | C=4016.7443311889 | time=11.570190s | PRcalls=0 | PRtime=0.000000s | A_evals=9488 | S1_evals=44000 | A_accepted=43 | S1_accepted=37 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=134804 | C=4016.7443311889 | time=11.372369s | PRcalls=0 | PRtime=0.000000s | A_evals=8288 | S1_evals=41600 | A_accepted=34 | S1_accepted=34 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=172693 | C=4016.7443311889 | time=11.176370s | PRcalls=0 | PRtime=0.000000s | A_evals=9383 | S1_evals=37600 | A_accepted=48 | S1_accepted=29 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=210450 | C=4016.7443311889 | time=12.208100s | PRcalls=0 | PRtime=0.000000s | A_evals=8527 | S1_evals=39200 | A_accepted=39 | S1_accepted=31 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=171434 | C=4016.7443311889 | time=11.390899s | PRcalls=0 | PRtime=0.000000s | A_evals=10005 | S1_evals=47200 | A_accepted=43 | S1_accepted=41 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=187001 | C=4016.7443311889 | time=11.439091s | PRcalls=0 | PRtime=0.000000s | A_evals=9210 | S1_evals=43200 | A_accepted=42 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=133041 | C=4016.7443311889 | time=11.310865s | PRcalls=0 | PRtime=0.000000s | A_evals=9344 | S1_evals=44800 | A_accepted=39 | S1_accepted=38 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=328721 | C=4016.7443311889 | time=10.808435s | PRcalls=0 | PRtime=0.000000s | A_evals=9510 | S1_evals=42400 | A_accepted=46 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=497477 | C=4016.7443311889 | time=12.750434s | PRcalls=0 | PRtime=0.000000s | A_evals=9288 | S1_evals=43200 | A_accepted=42 | S1_accepted=36 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed= 91030 | C=4016.7443311889 | time=11.525012s | PRcalls=0 | PRtime=0.000000s | A_evals=9188 | S1_evals=43200 | A_accepted=41 | S1_accepted=36 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed= 87198 | C=4016.7443311889 | time=11.847239s | PRcalls=0 | PRtime=0.000000s | A_evals=9749 | S1_evals=48000 | A_accepted=41 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=205899 | C=4016.7443311889 | time=11.360961s | PRcalls=0 | PRtime=0.000000s | A_evals=8127 | S1_evals=41600 | A_accepted=32 | S1_accepted=34 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=400804 | C=4016.7443311889 | time=11.766993s | PRcalls=0 | PRtime=0.000000s | A_evals=10610 | S1_evals=50400 | A_accepted=47 | S1_accepted=45 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=237596 | C=4016.7443311889 | time=11.852593s | PRcalls=0 | PRtime=0.000000s | A_evals=8371 | S1_evals=42400 | A_accepted=35 | S1_accepted=35 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=  1346 | C=4016.7443311889 | time=11.705312s | PRcalls=0 | PRtime=0.000000s | A_evals=8810 | S1_evals=48000 | A_accepted=32 | S1_accepted=42 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=411979 | C=4016.7443311889 | time=11.480169s | PRcalls=0 | PRtime=0.000000s | A_evals=8249 | S1_evals=44000 | A_accepted=31 | S1_accepted=37 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=295898 | C=4016.7443311889 | time=11.284397s | PRcalls=0 | PRtime=0.000000s | A_evals=8622 | S1_evals=38400 | A_accepted=39 | S1_accepted=30 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=269046 | C=4016.7443311889 | time=11.198285s | PRcalls=0 | PRtime=0.000000s | A_evals=8615 | S1_evals=46400 | A_accepted=34 | S1_accepted=40 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=154485 | C=4016.7443311889 | time=12.318281s | PRcalls=0 | PRtime=0.000000s | A_evals=9449 | S1_evals=44800 | A_accepted=42 | S1_accepted=38 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=171750 | C=4016.7443311889 | time=11.692326s | PRcalls=0 | PRtime=0.000000s | A_evals=8688 | S1_evals=47200 | A_accepted=31 | S1_accepted=41 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=231105 | C=4016.7443311889 | time=11.159837s | PRcalls=0 | PRtime=0.000000s | A_evals=8149 | S1_evals=38400 | A_accepted=37 | S1_accepted=30 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=317139 | C=4016.7443311889 | time=12.022204s | PRcalls=0 | PRtime=0.000000s | A_evals=8005 | S1_evals=44800 | A_accepted=26 | S1_accepted=38 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed=409973 | C=4016.7443311889 | time=10.977926s | PRcalls=0 | PRtime=0.000000s | A_evals=8527 | S1_evals=40000 | A_accepted=38 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P10_a2p0_s1 | seed= 89335 | C=4016.7443311889 | time=11.247296s | PRcalls=0 | PRtime=0.000000s | A_evals=9259 | S1_evals=47200 | A_accepted=41 | S1_accepted=41 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=183601 | C=1832.6430525135 | time=18.584252s | PRcalls=0 | PRtime=0.000000s | A_evals=13800 | S1_evals=45586 | A_accepted=95 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=122241 | C=1832.6430525135 | time=16.008343s | PRcalls=0 | PRtime=0.000000s | A_evals=12642 | S1_evals=51809 | A_accepted=79 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=347126 | C=1832.6430525135 | time=16.351063s | PRcalls=0 | PRtime=0.000000s | A_evals=13971 | S1_evals=53629 | A_accepted=90 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=420036 | C=1832.6430525135 | time=16.797241s | PRcalls=0 | PRtime=0.000000s | A_evals=13971 | S1_evals=57588 | A_accepted=86 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed= 22114 | C=1832.6430525135 | time=16.119883s | PRcalls=0 | PRtime=0.000000s | A_evals=14871 | S1_evals=58577 | A_accepted=95 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=384850 | C=1832.6430525135 | time=15.485009s | PRcalls=0 | PRtime=0.000000s | A_evals=12600 | S1_evals=39316 | A_accepted=89 | S1_accepted=19 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=435983 | C=1832.6430525135 | time=16.326876s | PRcalls=0 | PRtime=0.000000s | A_evals=14571 | S1_evals=58436 | A_accepted=92 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=134804 | C=1832.6430525135 | time=16.692749s | PRcalls=0 | PRtime=0.000000s | A_evals=13171 | S1_evals=49445 | A_accepted=86 | S1_accepted=28 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=172693 | C=1832.6430525135 | time=16.032481s | PRcalls=0 | PRtime=0.000000s | A_evals=13442 | S1_evals=51109 | A_accepted=87 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=210450 | C=1832.6430525135 | time=16.090404s | PRcalls=0 | PRtime=0.000000s | A_evals=14200 | S1_evals=47230 | A_accepted=98 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=171434 | C=1832.6430525135 | time=16.053146s | PRcalls=0 | PRtime=0.000000s | A_evals=13342 | S1_evals=45316 | A_accepted=91 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=187001 | C=1832.6430525135 | time=17.117542s | PRcalls=0 | PRtime=0.000000s | A_evals=13413 | S1_evals=50613 | A_accepted=88 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=133041 | C=1832.6430525135 | time=16.456917s | PRcalls=0 | PRtime=0.000000s | A_evals=12271 | S1_evals=43332 | A_accepted=83 | S1_accepted=22 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=328721 | C=1832.6430525135 | time=16.004444s | PRcalls=0 | PRtime=0.000000s | A_evals=13671 | S1_evals=48142 | A_accepted=92 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=497477 | C=1832.6430525135 | time=17.018373s | PRcalls=0 | PRtime=0.000000s | A_evals=14142 | S1_evals=58250 | A_accepted=88 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed= 91030 | C=1832.6430525135 | time=16.797719s | PRcalls=0 | PRtime=0.000000s | A_evals=13871 | S1_evals=53796 | A_accepted=89 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed= 87198 | C=1832.6430525135 | time=15.992053s | PRcalls=0 | PRtime=0.000000s | A_evals=12742 | S1_evals=51349 | A_accepted=80 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=205899 | C=1832.6430525135 | time=15.785035s | PRcalls=0 | PRtime=0.000000s | A_evals=12442 | S1_evals=53684 | A_accepted=75 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=400804 | C=1832.6430525135 | time=16.742982s | PRcalls=0 | PRtime=0.000000s | A_evals=14071 | S1_evals=49537 | A_accepted=95 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=237596 | C=1832.6430525135 | time=16.066472s | PRcalls=0 | PRtime=0.000000s | A_evals=14271 | S1_evals=55843 | A_accepted=91 | S1_accepted=34 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=  1346 | C=1832.6430525135 | time=16.784733s | PRcalls=0 | PRtime=0.000000s | A_evals=14471 | S1_evals=57184 | A_accepted=92 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=411979 | C=1832.6430525135 | time=16.606792s | PRcalls=0 | PRtime=0.000000s | A_evals=13913 | S1_evals=54427 | A_accepted=90 | S1_accepted=32 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=295898 | C=1832.6430525135 | time=16.349544s | PRcalls=0 | PRtime=0.000000s | A_evals=14413 | S1_evals=50066 | A_accepted=98 | S1_accepted=29 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=269046 | C=1832.6430525135 | time=16.005568s | PRcalls=0 | PRtime=0.000000s | A_evals=13342 | S1_evals=54816 | A_accepted=83 | S1_accepted=33 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=154485 | C=1832.6430525135 | time=16.028224s | PRcalls=0 | PRtime=0.000000s | A_evals=12884 | S1_evals=52842 | A_accepted=81 | S1_accepted=31 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=171750 | C=1832.6430525135 | time=16.789733s | PRcalls=0 | PRtime=0.000000s | A_evals=14542 | S1_evals=56751 | A_accepted=93 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=231105 | C=1832.6430525135 | time=16.242741s | PRcalls=0 | PRtime=0.000000s | A_evals=14571 | S1_evals=52356 | A_accepted=97 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=317139 | C=1832.6430525135 | time=16.444110s | PRcalls=0 | PRtime=0.000000s | A_evals=14813 | S1_evals=54659 | A_accepted=98 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed=409973 | C=1832.6430525135 | time=15.832415s | PRcalls=0 | PRtime=0.000000s | A_evals=14000 | S1_evals=47618 | A_accepted=95 | S1_accepted=27 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a0p5_s1 | seed= 89335 | C=1832.6430525135 | time=16.842323s | PRcalls=0 | PRtime=0.000000s | A_evals=12513 | S1_evals=45271 | A_accepted=84 | S1_accepted=24 | audit=2.274e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=183601 | C=2936.9359190554 | time=17.710679s | PRcalls=2 | PRtime=0.004554s | A_evals=16200 | S1_evals=57806 | A_accepted=106 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=122241 | C=2936.9359190554 | time=16.024247s | PRcalls=0 | PRtime=0.000000s | A_evals=15971 | S1_evals=47506 | A_accepted=113 | S1_accepted=29 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=347126 | C=2936.9359190554 | time=17.069679s | PRcalls=2 | PRtime=0.001265s | A_evals=16571 | S1_evals=61157 | A_accepted=107 | S1_accepted=39 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=420036 | C=2936.9359190554 | time=16.377060s | PRcalls=2 | PRtime=0.006605s | A_evals=15542 | S1_evals=54680 | A_accepted=103 | S1_accepted=33 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed= 22114 | C=2936.9359190554 | time=16.899801s | PRcalls=2 | PRtime=0.002495s | A_evals=16671 | S1_evals=60414 | A_accepted=109 | S1_accepted=38 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=384850 | C=2936.9359190554 | time=16.189394s | PRcalls=0 | PRtime=0.000000s | A_evals=14771 | S1_evals=50168 | A_accepted=100 | S1_accepted=30 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=435983 | C=2936.9359190554 | time=17.166381s | PRcalls=2 | PRtime=0.000903s | A_evals=16700 | S1_evals=63699 | A_accepted=105 | S1_accepted=42 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=134804 | C=2936.9359190554 | time=16.569780s | PRcalls=0 | PRtime=0.000000s | A_evals=17671 | S1_evals=57270 | A_accepted=121 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=172693 | C=2936.9359190554 | time=16.978235s | PRcalls=2 | PRtime=0.004391s | A_evals=16800 | S1_evals=60943 | A_accepted=109 | S1_accepted=39 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=210450 | C=2936.9359190554 | time=16.000878s | PRcalls=0 | PRtime=0.000000s | A_evals=15900 | S1_evals=42012 | A_accepted=118 | S1_accepted=23 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=171434 | C=2936.9359190554 | time=16.435604s | PRcalls=2 | PRtime=0.004017s | A_evals=15771 | S1_evals=46534 | A_accepted=113 | S1_accepted=25 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=187001 | C=2936.9359190554 | time=16.244112s | PRcalls=2 | PRtime=0.002625s | A_evals=15413 | S1_evals=54415 | A_accepted=102 | S1_accepted=33 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=133041 | C=2936.9359190554 | time=16.336599s | PRcalls=0 | PRtime=0.000000s | A_evals=15471 | S1_evals=54130 | A_accepted=103 | S1_accepted=34 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=328721 | C=2936.9359190554 | time=18.555295s | PRcalls=2 | PRtime=0.000954s | A_evals=15271 | S1_evals=53400 | A_accepted=101 | S1_accepted=32 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=497477 | C=2936.9359190554 | time=17.746561s | PRcalls=2 | PRtime=0.007862s | A_evals=17142 | S1_evals=58319 | A_accepted=116 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed= 91030 | C=2936.9359190554 | time=16.573946s | PRcalls=2 | PRtime=0.004846s | A_evals=16971 | S1_evals=56934 | A_accepted=115 | S1_accepted=35 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed= 87198 | C=2936.9359190554 | time=16.423834s | PRcalls=0 | PRtime=0.000000s | A_evals=16142 | S1_evals=55867 | A_accepted=108 | S1_accepted=36 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=205899 | C=2936.9359190554 | time=17.091067s | PRcalls=1 | PRtime=0.001174s | A_evals=14842 | S1_evals=54879 | A_accepted=96 | S1_accepted=34 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=400804 | C=2936.9359190554 | time=16.359696s | PRcalls=2 | PRtime=0.003020s | A_evals=15842 | S1_evals=55707 | A_accepted=105 | S1_accepted=34 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=237596 | C=2936.9359190554 | time=16.232907s | PRcalls=2 | PRtime=0.001823s | A_evals=14842 | S1_evals=49645 | A_accepted=101 | S1_accepted=28 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=  1346 | C=2936.9359190554 | time=16.808386s | PRcalls=2 | PRtime=0.005609s | A_evals=15442 | S1_evals=49472 | A_accepted=107 | S1_accepted=28 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=411979 | C=2936.9359190554 | time=16.211071s | PRcalls=0 | PRtime=0.000000s | A_evals=14813 | S1_evals=51399 | A_accepted=99 | S1_accepted=32 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=295898 | C=2936.9359190554 | time=16.835601s | PRcalls=2 | PRtime=0.002080s | A_evals=17013 | S1_evals=62814 | A_accepted=110 | S1_accepted=41 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=269046 | C=2936.9359190554 | time=16.585469s | PRcalls=2 | PRtime=0.004599s | A_evals=16342 | S1_evals=57603 | A_accepted=108 | S1_accepted=36 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=154485 | C=2936.9359190554 | time=16.179837s | PRcalls=1 | PRtime=0.000749s | A_evals=14984 | S1_evals=62673 | A_accepted=91 | S1_accepted=41 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=171750 | C=2936.9359190554 | time=15.221067s | PRcalls=0 | PRtime=0.000000s | A_evals=17242 | S1_evals=55074 | A_accepted=120 | S1_accepted=35 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=231105 | C=2936.9359190554 | time=16.727242s | PRcalls=0 | PRtime=0.000000s | A_evals=16771 | S1_evals=63157 | A_accepted=107 | S1_accepted=43 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=317139 | C=2936.9359190554 | time=16.504615s | PRcalls=2 | PRtime=0.002181s | A_evals=15942 | S1_evals=62136 | A_accepted=100 | S1_accepted=40 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed=409973 | C=2936.9359190554 | time=17.131327s | PRcalls=2 | PRtime=0.001676s | A_evals=15900 | S1_evals=57105 | A_accepted=104 | S1_accepted=35 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a1p0_s1 | seed= 89335 | C=2936.9359190554 | time=16.460866s | PRcalls=0 | PRtime=0.000000s | A_evals=16313 | S1_evals=59807 | A_accepted=106 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=183601 | C=4092.7255092571 | time=18.869459s | PRcalls=2 | PRtime=0.008419s | A_evals=15400 | S1_evals=58531 | A_accepted=100 | S1_accepted=34 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=122241 | C=4092.2631451974 | time=17.267712s | PRcalls=1 | PRtime=0.015659s | A_evals=13542 | S1_evals=52384 | A_accepted=87 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=347126 | C=4091.7522378141 | time=16.215975s | PRcalls=1 | PRtime=0.009769s | A_evals=13942 | S1_evals=54862 | A_accepted=90 | S1_accepted=31 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=420036 | C=4092.2631451974 | time=16.013424s | PRcalls=2 | PRtime=0.007668s | A_evals=13671 | S1_evals=54632 | A_accepted=87 | S1_accepted=30 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed= 22114 | C=4092.0808372126 | time=16.608663s | PRcalls=2 | PRtime=0.006807s | A_evals=16171 | S1_evals=64324 | A_accepted=102 | S1_accepted=40 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=384850 | C=4092.7255092571 | time=18.912517s | PRcalls=1 | PRtime=0.002482s | A_evals=13300 | S1_evals=51506 | A_accepted=85 | S1_accepted=29 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=435983 | C=4092.2631451974 | time=16.734494s | PRcalls=1 | PRtime=0.010298s | A_evals=15400 | S1_evals=57835 | A_accepted=101 | S1_accepted=34 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=134804 | C=4092.0808372126 | time=16.846349s | PRcalls=2 | PRtime=0.006525s | A_evals=15742 | S1_evals=64014 | A_accepted=99 | S1_accepted=39 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=172693 | C=4092.2631451974 | time=17.177720s | PRcalls=2 | PRtime=0.005304s | A_evals=15471 | S1_evals=64194 | A_accepted=95 | S1_accepted=40 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=210450 | C=4092.2631451974 | time=16.583242s | PRcalls=2 | PRtime=0.007781s | A_evals=15871 | S1_evals=61790 | A_accepted=101 | S1_accepted=38 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=171434 | C=4092.2631451974 | time=16.707772s | PRcalls=2 | PRtime=0.017433s | A_evals=16942 | S1_evals=58323 | A_accepted=115 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=187001 | C=4090.9648579876 | time=16.015433s | PRcalls=2 | PRtime=0.005118s | A_evals=13342 | S1_evals=48425 | A_accepted=88 | S1_accepted=26 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=133041 | C=4092.2631451974 | time=17.262973s | PRcalls=2 | PRtime=0.010663s | A_evals=15213 | S1_evals=61690 | A_accepted=95 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=328721 | C=4092.0808372126 | time=16.435087s | PRcalls=1 | PRtime=0.002846s | A_evals=13671 | S1_evals=49946 | A_accepted=91 | S1_accepted=27 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=497477 | C=4091.8486853366 | time=17.369970s | PRcalls=2 | PRtime=0.008960s | A_evals=15942 | S1_evals=63659 | A_accepted=101 | S1_accepted=39 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed= 91030 | C=4092.2631451974 | time=16.527135s | PRcalls=1 | PRtime=0.001468s | A_evals=12971 | S1_evals=47341 | A_accepted=86 | S1_accepted=25 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed= 87198 | C=4091.6937103083 | time=16.377818s | PRcalls=2 | PRtime=0.004207s | A_evals=14500 | S1_evals=59188 | A_accepted=90 | S1_accepted=35 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=205899 | C=4092.7255092571 | time=16.473180s | PRcalls=1 | PRtime=0.004393s | A_evals=13900 | S1_evals=60410 | A_accepted=83 | S1_accepted=37 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=400804 | C=4092.2631451974 | time=16.739760s | PRcalls=2 | PRtime=0.009743s | A_evals=16442 | S1_evals=63073 | A_accepted=107 | S1_accepted=38 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=237596 | C=4092.7255092571 | time=17.693916s | PRcalls=2 | PRtime=0.013517s | A_evals=15071 | S1_evals=67572 | A_accepted=88 | S1_accepted=43 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=  1346 | C=4092.2631451974 | time=16.550439s | PRcalls=2 | PRtime=0.022401s | A_evals=17042 | S1_evals=64436 | A_accepted=111 | S1_accepted=40 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=411979 | C=4092.7255092571 | time=16.863861s | PRcalls=1 | PRtime=0.003755s | A_evals=15184 | S1_evals=62067 | A_accepted=96 | S1_accepted=38 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=295898 | C=4092.7255092571 | time=17.252281s | PRcalls=2 | PRtime=0.008094s | A_evals=15842 | S1_evals=64014 | A_accepted=100 | S1_accepted=39 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=269046 | C=4092.2631451974 | time=16.331632s | PRcalls=1 | PRtime=0.003209s | A_evals=12271 | S1_evals=49651 | A_accepted=78 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=154485 | C=4092.7255092571 | time=17.058408s | PRcalls=2 | PRtime=0.013082s | A_evals=16784 | S1_evals=76204 | A_accepted=99 | S1_accepted=50 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=171750 | C=4092.7255092571 | time=16.614756s | PRcalls=1 | PRtime=0.006146s | A_evals=13671 | S1_evals=66316 | A_accepted=77 | S1_accepted=41 | audit=4.547e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=231105 | C=4092.2631451974 | time=17.421331s | PRcalls=1 | PRtime=0.000905s | A_evals=17671 | S1_evals=65873 | A_accepted=114 | S1_accepted=44 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=317139 | C=4092.7255092571 | time=16.290248s | PRcalls=1 | PRtime=0.006112s | A_evals=14400 | S1_evals=53742 | A_accepted=94 | S1_accepted=31 | audit=9.095e-13
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed=409973 | C=4091.6937103083 | time=16.320713s | PRcalls=2 | PRtime=0.013791s | A_evals=15000 | S1_evals=49153 | A_accepted=104 | S1_accepted=26 | audit=0.000e+00
+ILvAS1P  | N200_I100_K50_J50_P20_a2p0_s1 | seed= 89335 | C=4092.7255092571 | time=17.042754s | PRcalls=1 | PRtime=0.005702s | A_evals=15342 | S1_evals=63685 | A_accepted=95 | S1_accepted=40 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=183601 | C=3414.2932058839 | time=73.956422s | PRcalls=0 | PRtime=0.000000s | A_evals=16931 | S1_evals=227200 | A_accepted=18 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=122241 | C=3414.2932058839 | time=69.762152s | PRcalls=0 | PRtime=0.000000s | A_evals=17052 | S1_evals=211200 | A_accepted=24 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=347126 | C=3414.2932058839 | time=72.069348s | PRcalls=0 | PRtime=0.000000s | A_evals=17889 | S1_evals=252800 | A_accepted=14 | S1_accepted=61 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=420036 | C=3414.2932058839 | time=70.376193s | PRcalls=0 | PRtime=0.000000s | A_evals=17610 | S1_evals=224000 | A_accepted=22 | S1_accepted=52 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed= 22114 | C=3414.2932058839 | time=70.654057s | PRcalls=0 | PRtime=0.000000s | A_evals=16326 | S1_evals=227200 | A_accepted=13 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=384850 | C=3414.2932058839 | time=70.906792s | PRcalls=0 | PRtime=0.000000s | A_evals=17126 | S1_evals=204800 | A_accepted=24 | S1_accepted=46 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=435983 | C=3414.2932058839 | time=70.856875s | PRcalls=0 | PRtime=0.000000s | A_evals=17289 | S1_evals=227200 | A_accepted=19 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=134804 | C=3414.2932058839 | time=69.965249s | PRcalls=0 | PRtime=0.000000s | A_evals=17489 | S1_evals=217600 | A_accepted=23 | S1_accepted=50 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=172693 | C=3414.2932058839 | time=71.025111s | PRcalls=0 | PRtime=0.000000s | A_evals=16852 | S1_evals=240000 | A_accepted=14 | S1_accepted=57 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=210450 | C=3414.2932058839 | time=71.704936s | PRcalls=0 | PRtime=0.000000s | A_evals=19242 | S1_evals=227200 | A_accepted=26 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=171434 | C=3414.2932058839 | time=73.395811s | PRcalls=0 | PRtime=0.000000s | A_evals=16405 | S1_evals=214400 | A_accepted=17 | S1_accepted=49 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=187001 | C=3414.2932058839 | time=69.907846s | PRcalls=0 | PRtime=0.000000s | A_evals=15968 | S1_evals=201600 | A_accepted=20 | S1_accepted=45 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=133041 | C=3414.2932058839 | time=71.174366s | PRcalls=0 | PRtime=0.000000s | A_evals=17810 | S1_evals=236800 | A_accepted=19 | S1_accepted=56 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=328721 | C=3414.2932058839 | time=70.569515s | PRcalls=0 | PRtime=0.000000s | A_evals=17126 | S1_evals=224000 | A_accepted=18 | S1_accepted=52 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=497477 | C=3414.2932058839 | time=71.318393s | PRcalls=0 | PRtime=0.000000s | A_evals=18847 | S1_evals=233600 | A_accepted=24 | S1_accepted=55 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed= 91030 | C=3414.2932058839 | time=70.931985s | PRcalls=0 | PRtime=0.000000s | A_evals=17963 | S1_evals=233600 | A_accepted=18 | S1_accepted=55 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed= 87198 | C=3414.2932058839 | time=72.790184s | PRcalls=0 | PRtime=0.000000s | A_evals=19968 | S1_evals=249600 | A_accepted=25 | S1_accepted=60 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=205899 | C=3414.2932058839 | time=71.548687s | PRcalls=0 | PRtime=0.000000s | A_evals=17378 | S1_evals=243200 | A_accepted=18 | S1_accepted=58 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=400804 | C=3414.2932058839 | time=70.772840s | PRcalls=0 | PRtime=0.000000s | A_evals=17973 | S1_evals=230400 | A_accepted=23 | S1_accepted=54 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=237596 | C=3414.2932058839 | time=71.312976s | PRcalls=0 | PRtime=0.000000s | A_evals=17610 | S1_evals=230400 | A_accepted=20 | S1_accepted=54 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=  1346 | C=3414.2932058839 | time=70.591229s | PRcalls=0 | PRtime=0.000000s | A_evals=17768 | S1_evals=230400 | A_accepted=20 | S1_accepted=54 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=411979 | C=3414.2932058839 | time=72.629832s | PRcalls=0 | PRtime=0.000000s | A_evals=18768 | S1_evals=252800 | A_accepted=18 | S1_accepted=61 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=295898 | C=3414.2932058839 | time=70.980249s | PRcalls=0 | PRtime=0.000000s | A_evals=17484 | S1_evals=227200 | A_accepted=18 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=269046 | C=3414.2932058839 | time=70.962046s | PRcalls=0 | PRtime=0.000000s | A_evals=18373 | S1_evals=230400 | A_accepted=25 | S1_accepted=54 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=154485 | C=3414.2932058839 | time=71.328010s | PRcalls=0 | PRtime=0.000000s | A_evals=17857 | S1_evals=240000 | A_accepted=21 | S1_accepted=57 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=171750 | C=3414.2932058839 | time=72.203298s | PRcalls=0 | PRtime=0.000000s | A_evals=17694 | S1_evals=256000 | A_accepted=14 | S1_accepted=62 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=231105 | C=3414.2932058839 | time=72.611528s | PRcalls=0 | PRtime=0.000000s | A_evals=19926 | S1_evals=246400 | A_accepted=25 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=317139 | C=3414.2932058839 | time=70.872782s | PRcalls=0 | PRtime=0.000000s | A_evals=16768 | S1_evals=224000 | A_accepted=17 | S1_accepted=52 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed=409973 | C=3414.2932058839 | time=70.700020s | PRcalls=0 | PRtime=0.000000s | A_evals=17810 | S1_evals=236800 | A_accepted=19 | S1_accepted=56 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a0p5_s1 | seed= 89335 | C=3414.2932058839 | time=70.884080s | PRcalls=0 | PRtime=0.000000s | A_evals=17205 | S1_evals=233600 | A_accepted=15 | S1_accepted=55 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=183601 | C=5628.3453086378 | time=76.433328s | PRcalls=2 | PRtime=0.002101s | A_evals=22289 | S1_evals=304000 | A_accepted=20 | S1_accepted=75 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=122241 | C=5628.4661016153 | time=75.678416s | PRcalls=2 | PRtime=0.004186s | A_evals=22252 | S1_evals=300800 | A_accepted=22 | S1_accepted=74 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=347126 | C=5628.4661016153 | time=74.226938s | PRcalls=2 | PRtime=0.002197s | A_evals=23289 | S1_evals=307200 | A_accepted=24 | S1_accepted=76 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=420036 | C=5628.4661016153 | time=73.591891s | PRcalls=2 | PRtime=0.002275s | A_evals=21410 | S1_evals=291200 | A_accepted=20 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed= 22114 | C=5628.4661016153 | time=74.043331s | PRcalls=2 | PRtime=0.003901s | A_evals=22526 | S1_evals=294400 | A_accepted=23 | S1_accepted=72 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=384850 | C=5628.4661016153 | time=73.930913s | PRcalls=2 | PRtime=0.002155s | A_evals=23121 | S1_evals=278400 | A_accepted=29 | S1_accepted=67 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=435983 | C=5628.4661016153 | time=73.281710s | PRcalls=2 | PRtime=0.005036s | A_evals=23131 | S1_evals=284800 | A_accepted=31 | S1_accepted=69 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=134804 | C=5628.3453086378 | time=72.905478s | PRcalls=2 | PRtime=0.003907s | A_evals=23610 | S1_evals=278400 | A_accepted=35 | S1_accepted=67 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=172693 | C=5628.4661016153 | time=74.411231s | PRcalls=2 | PRtime=0.004512s | A_evals=22852 | S1_evals=304000 | A_accepted=24 | S1_accepted=75 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=210450 | C=5628.3453086378 | time=75.823383s | PRcalls=2 | PRtime=0.002238s | A_evals=22842 | S1_evals=272000 | A_accepted=30 | S1_accepted=65 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=171434 | C=5628.4661016153 | time=73.788069s | PRcalls=2 | PRtime=0.003929s | A_evals=24163 | S1_evals=278400 | A_accepted=35 | S1_accepted=67 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=187001 | C=5628.4661016153 | time=71.756937s | PRcalls=2 | PRtime=0.006474s | A_evals=20242 | S1_evals=259200 | A_accepted=21 | S1_accepted=61 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=133041 | C=5628.4661016153 | time=74.501976s | PRcalls=2 | PRtime=0.004757s | A_evals=24252 | S1_evals=304000 | A_accepted=31 | S1_accepted=75 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=328721 | C=5628.4661016153 | time=76.197696s | PRcalls=2 | PRtime=0.001437s | A_evals=21405 | S1_evals=297600 | A_accepted=16 | S1_accepted=73 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=497477 | C=5628.3453086378 | time=74.639920s | PRcalls=2 | PRtime=0.001108s | A_evals=23047 | S1_evals=288000 | A_accepted=28 | S1_accepted=70 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed= 91030 | C=5628.3453086378 | time=73.373815s | PRcalls=2 | PRtime=0.002152s | A_evals=21963 | S1_evals=291200 | A_accepted=20 | S1_accepted=71 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed= 87198 | C=5628.3453086378 | time=74.683051s | PRcalls=2 | PRtime=0.001740s | A_evals=24452 | S1_evals=320000 | A_accepted=27 | S1_accepted=80 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=205899 | C=5628.4661016153 | time=74.377984s | PRcalls=2 | PRtime=0.004221s | A_evals=22536 | S1_evals=304000 | A_accepted=24 | S1_accepted=75 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=400804 | C=5628.3453086378 | time=76.042978s | PRcalls=2 | PRtime=0.003836s | A_evals=24047 | S1_evals=304000 | A_accepted=28 | S1_accepted=75 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=237596 | C=5628.4661016153 | time=74.349297s | PRcalls=2 | PRtime=0.003108s | A_evals=22884 | S1_evals=316800 | A_accepted=17 | S1_accepted=79 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=  1346 | C=5628.4661016153 | time=74.483102s | PRcalls=1 | PRtime=0.001164s | A_evals=22447 | S1_evals=288000 | A_accepted=25 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=411979 | C=5628.3453086378 | time=73.611324s | PRcalls=2 | PRtime=0.003200s | A_evals=21089 | S1_evals=288000 | A_accepted=19 | S1_accepted=70 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=295898 | C=5628.3453086378 | time=75.453580s | PRcalls=2 | PRtime=0.002240s | A_evals=24689 | S1_evals=323200 | A_accepted=26 | S1_accepted=81 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=269046 | C=5628.4661016153 | time=73.436618s | PRcalls=2 | PRtime=0.003894s | A_evals=23852 | S1_evals=291200 | A_accepted=33 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=154485 | C=5628.4661016153 | time=75.350675s | PRcalls=2 | PRtime=0.002162s | A_evals=24057 | S1_evals=326400 | A_accepted=25 | S1_accepted=82 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=171750 | C=5628.3453086378 | time=74.158865s | PRcalls=2 | PRtime=0.002165s | A_evals=20536 | S1_evals=304000 | A_accepted=14 | S1_accepted=75 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=231105 | C=5628.4661016153 | time=75.294128s | PRcalls=2 | PRtime=0.004871s | A_evals=24489 | S1_evals=307200 | A_accepted=30 | S1_accepted=76 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=317139 | C=5628.4661016153 | time=73.228691s | PRcalls=0 | PRtime=0.000000s | A_evals=22894 | S1_evals=284800 | A_accepted=31 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed=409973 | C=5628.4661016153 | time=73.326377s | PRcalls=2 | PRtime=0.002231s | A_evals=22768 | S1_evals=281600 | A_accepted=29 | S1_accepted=68 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a1p0_s1 | seed= 89335 | C=5628.4661016153 | time=72.071785s | PRcalls=2 | PRtime=0.002112s | A_evals=21205 | S1_evals=252800 | A_accepted=29 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=183601 | C=8052.1125002229 | time=77.630098s | PRcalls=2 | PRtime=0.003074s | A_evals=21247 | S1_evals=291200 | A_accepted=18 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=122241 | C=8050.3994522666 | time=76.696862s | PRcalls=2 | PRtime=0.002411s | A_evals=22694 | S1_evals=323200 | A_accepted=18 | S1_accepted=81 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=347126 | C=8052.1125002229 | time=75.594062s | PRcalls=2 | PRtime=0.004075s | A_evals=21489 | S1_evals=304000 | A_accepted=16 | S1_accepted=75 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=420036 | C=8052.1125002229 | time=76.271377s | PRcalls=2 | PRtime=0.005533s | A_evals=21731 | S1_evals=313600 | A_accepted=15 | S1_accepted=78 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed= 22114 | C=8052.1125002229 | time=75.415202s | PRcalls=2 | PRtime=0.005140s | A_evals=20652 | S1_evals=288000 | A_accepted=18 | S1_accepted=70 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=384850 | C=8050.3994522666 | time=75.775921s | PRcalls=2 | PRtime=0.002292s | A_evals=23484 | S1_evals=304000 | A_accepted=24 | S1_accepted=75 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=435983 | C=8052.0840385037 | time=75.487000s | PRcalls=2 | PRtime=0.003691s | A_evals=22405 | S1_evals=288000 | A_accepted=24 | S1_accepted=70 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=134804 | C=8052.0840385037 | time=74.985648s | PRcalls=1 | PRtime=0.001508s | A_evals=20684 | S1_evals=288000 | A_accepted=15 | S1_accepted=71 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=172693 | C=8052.0840385037 | time=76.084977s | PRcalls=2 | PRtime=0.003818s | A_evals=22052 | S1_evals=288000 | A_accepted=25 | S1_accepted=70 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=210450 | C=8052.1125002229 | time=73.914778s | PRcalls=2 | PRtime=0.004789s | A_evals=20521 | S1_evals=281600 | A_accepted=15 | S1_accepted=68 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=171434 | C=8050.3994522666 | time=75.188985s | PRcalls=2 | PRtime=0.002238s | A_evals=23126 | S1_evals=310400 | A_accepted=21 | S1_accepted=77 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=187001 | C=8050.3994522666 | time=76.217159s | PRcalls=2 | PRtime=0.005809s | A_evals=22889 | S1_evals=313600 | A_accepted=20 | S1_accepted=78 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=133041 | C=8052.0840385037 | time=77.796284s | PRcalls=2 | PRtime=0.004457s | A_evals=23852 | S1_evals=313600 | A_accepted=26 | S1_accepted=78 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=328721 | C=8052.1125002229 | time=74.838099s | PRcalls=2 | PRtime=0.002938s | A_evals=22884 | S1_evals=294400 | A_accepted=24 | S1_accepted=72 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=497477 | C=8050.3994522666 | time=77.746186s | PRcalls=2 | PRtime=0.002495s | A_evals=23247 | S1_evals=329600 | A_accepted=16 | S1_accepted=83 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed= 91030 | C=8052.1125002229 | time=75.909356s | PRcalls=2 | PRtime=0.008686s | A_evals=20600 | S1_evals=281600 | A_accepted=15 | S1_accepted=68 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed= 87198 | C=8052.1125002229 | time=76.045554s | PRcalls=2 | PRtime=0.003775s | A_evals=22615 | S1_evals=323200 | A_accepted=18 | S1_accepted=81 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=205899 | C=8052.1125002229 | time=73.096400s | PRcalls=2 | PRtime=0.010416s | A_evals=19805 | S1_evals=252800 | A_accepted=22 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=400804 | C=8052.0840385037 | time=74.497121s | PRcalls=1 | PRtime=0.001903s | A_evals=22005 | S1_evals=284800 | A_accepted=23 | S1_accepted=70 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=237596 | C=8050.3994522666 | time=76.400664s | PRcalls=2 | PRtime=0.002334s | A_evals=22489 | S1_evals=316800 | A_accepted=17 | S1_accepted=79 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=  1346 | C=8052.0840385037 | time=73.067070s | PRcalls=1 | PRtime=0.001807s | A_evals=18284 | S1_evals=236800 | A_accepted=19 | S1_accepted=55 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=411979 | C=8052.1125002229 | time=74.900073s | PRcalls=2 | PRtime=0.004940s | A_evals=22568 | S1_evals=297600 | A_accepted=23 | S1_accepted=73 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=295898 | C=8050.3994522666 | time=75.157938s | PRcalls=2 | PRtime=0.002295s | A_evals=24889 | S1_evals=288000 | A_accepted=38 | S1_accepted=70 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=269046 | C=8052.1125002229 | time=75.607724s | PRcalls=1 | PRtime=0.001891s | A_evals=23289 | S1_evals=284800 | A_accepted=31 | S1_accepted=70 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=154485 | C=8052.1125002229 | time=75.042033s | PRcalls=2 | PRtime=0.002990s | A_evals=22726 | S1_evals=294400 | A_accepted=24 | S1_accepted=72 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=171750 | C=8052.0840385037 | time=76.568793s | PRcalls=2 | PRtime=0.003825s | A_evals=23094 | S1_evals=336000 | A_accepted=16 | S1_accepted=85 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=231105 | C=8052.0840385037 | time=75.803219s | PRcalls=1 | PRtime=0.001192s | A_evals=23768 | S1_evals=297600 | A_accepted=29 | S1_accepted=74 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=317139 | C=8052.1125002229 | time=78.800482s | PRcalls=1 | PRtime=0.001871s | A_evals=23736 | S1_evals=320000 | A_accepted=25 | S1_accepted=81 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed=409973 | C=8052.1125002229 | time=74.834059s | PRcalls=2 | PRtime=0.005007s | A_evals=21968 | S1_evals=300800 | A_accepted=19 | S1_accepted=74 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P20_a2p0_s1 | seed= 89335 | C=8052.1125002229 | time=74.773427s | PRcalls=2 | PRtime=0.003743s | A_evals=24284 | S1_evals=294400 | A_accepted=31 | S1_accepted=72 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=183601 | C=3469.4930682421 | time=99.320884s | PRcalls=0 | PRtime=0.000000s | A_evals=27917 | S1_evals=293732 | A_accepted=71 | S1_accepted=53 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=122241 | C=3469.4930682421 | time=95.690196s | PRcalls=0 | PRtime=0.000000s | A_evals=27131 | S1_evals=265022 | A_accepted=72 | S1_accepted=46 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=347126 | C=3469.4930682421 | time=94.067830s | PRcalls=0 | PRtime=0.000000s | A_evals=27000 | S1_evals=248159 | A_accepted=75 | S1_accepted=42 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=420036 | C=3469.4930682421 | time=95.852022s | PRcalls=0 | PRtime=0.000000s | A_evals=28462 | S1_evals=284412 | A_accepted=74 | S1_accepted=51 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed= 22114 | C=3469.4930682421 | time=95.174194s | PRcalls=0 | PRtime=0.000000s | A_evals=26524 | S1_evals=290799 | A_accepted=64 | S1_accepted=52 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=384850 | C=3469.4930682421 | time=95.387423s | PRcalls=0 | PRtime=0.000000s | A_evals=28393 | S1_evals=289351 | A_accepted=73 | S1_accepted=52 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=435983 | C=3469.4930682421 | time=94.744960s | PRcalls=0 | PRtime=0.000000s | A_evals=27462 | S1_evals=250345 | A_accepted=77 | S1_accepted=43 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=134804 | C=3469.4930682421 | time=96.115556s | PRcalls=0 | PRtime=0.000000s | A_evals=27262 | S1_evals=279875 | A_accepted=69 | S1_accepted=50 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=172693 | C=3469.4930682421 | time=93.301850s | PRcalls=0 | PRtime=0.000000s | A_evals=24524 | S1_evals=240254 | A_accepted=66 | S1_accepted=40 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=210450 | C=3469.4930682421 | time=96.960728s | PRcalls=0 | PRtime=0.000000s | A_evals=29462 | S1_evals=310255 | A_accepted=73 | S1_accepted=57 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=171434 | C=3469.4930682421 | time=95.992527s | PRcalls=0 | PRtime=0.000000s | A_evals=29131 | S1_evals=277327 | A_accepted=79 | S1_accepted=49 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=187001 | C=3469.4930682421 | time=92.601720s | PRcalls=0 | PRtime=0.000000s | A_evals=24400 | S1_evals=231610 | A_accepted=66 | S1_accepted=38 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=133041 | C=3469.4930682421 | time=96.887066s | PRcalls=0 | PRtime=0.000000s | A_evals=28462 | S1_evals=285619 | A_accepted=74 | S1_accepted=51 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=328721 | C=3469.4930682421 | time=95.178876s | PRcalls=0 | PRtime=0.000000s | A_evals=27593 | S1_evals=271027 | A_accepted=73 | S1_accepted=48 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=497477 | C=3469.4930682421 | time=94.229271s | PRcalls=0 | PRtime=0.000000s | A_evals=24993 | S1_evals=256276 | A_accepted=64 | S1_accepted=44 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed= 91030 | C=3469.4930682421 | time=96.918973s | PRcalls=0 | PRtime=0.000000s | A_evals=27855 | S1_evals=314621 | A_accepted=65 | S1_accepted=58 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed= 87198 | C=3469.4930682421 | time=97.036930s | PRcalls=0 | PRtime=0.000000s | A_evals=29793 | S1_evals=309815 | A_accepted=75 | S1_accepted=57 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=205899 | C=3469.4930682421 | time=95.185399s | PRcalls=0 | PRtime=0.000000s | A_evals=27600 | S1_evals=268605 | A_accepted=73 | S1_accepted=47 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=400804 | C=3469.4930682421 | time=94.874277s | PRcalls=0 | PRtime=0.000000s | A_evals=29331 | S1_evals=268438 | A_accepted=82 | S1_accepted=47 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=237596 | C=3469.4930682421 | time=97.224528s | PRcalls=0 | PRtime=0.000000s | A_evals=28193 | S1_evals=309591 | A_accepted=67 | S1_accepted=57 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=  1346 | C=3469.4930682421 | time=101.776358s | PRcalls=0 | PRtime=0.000000s | A_evals=30462 | S1_evals=278482 | A_accepted=86 | S1_accepted=49 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=411979 | C=3469.4930682421 | time=95.297951s | PRcalls=0 | PRtime=0.000000s | A_evals=26862 | S1_evals=286679 | A_accepted=66 | S1_accepted=51 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=295898 | C=3469.4930682421 | time=95.592002s | PRcalls=0 | PRtime=0.000000s | A_evals=25731 | S1_evals=272699 | A_accepted=63 | S1_accepted=48 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=269046 | C=3469.4930682421 | time=96.514901s | PRcalls=0 | PRtime=0.000000s | A_evals=28924 | S1_evals=289718 | A_accepted=76 | S1_accepted=52 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=154485 | C=3469.4930682421 | time=94.419074s | PRcalls=0 | PRtime=0.000000s | A_evals=27862 | S1_evals=264575 | A_accepted=76 | S1_accepted=46 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=171750 | C=3469.4930682421 | time=95.647588s | PRcalls=0 | PRtime=0.000000s | A_evals=25800 | S1_evals=259303 | A_accepted=66 | S1_accepted=45 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=231105 | C=3469.4930682421 | time=96.260879s | PRcalls=0 | PRtime=0.000000s | A_evals=29724 | S1_evals=297264 | A_accepted=78 | S1_accepted=54 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=317139 | C=3469.4930682421 | time=96.255126s | PRcalls=0 | PRtime=0.000000s | A_evals=28131 | S1_evals=279482 | A_accepted=73 | S1_accepted=50 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed=409973 | C=3469.4930682421 | time=96.059114s | PRcalls=0 | PRtime=0.000000s | A_evals=29717 | S1_evals=277657 | A_accepted=84 | S1_accepted=49 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a0p5_s1 | seed= 89335 | C=3469.4930682421 | time=93.266506s | PRcalls=0 | PRtime=0.000000s | A_evals=25731 | S1_evals=222541 | A_accepted=75 | S1_accepted=36 | audit=4.547e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=183601 | C=5700.8529122472 | time=101.470337s | PRcalls=2 | PRtime=0.002603s | A_evals=31579 | S1_evals=343353 | A_accepted=79 | S1_accepted=62 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=122241 | C=5700.8529122472 | time=99.841694s | PRcalls=2 | PRtime=0.001799s | A_evals=32524 | S1_evals=360747 | A_accepted=78 | S1_accepted=66 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=347126 | C=5700.8529122472 | time=97.132153s | PRcalls=0 | PRtime=0.000000s | A_evals=28662 | S1_evals=319200 | A_accepted=68 | S1_accepted=58 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=420036 | C=5700.8529122472 | time=98.207427s | PRcalls=0 | PRtime=0.000000s | A_evals=30324 | S1_evals=336000 | A_accepted=73 | S1_accepted=62 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed= 22114 | C=5700.8529122472 | time=98.898089s | PRcalls=2 | PRtime=0.006006s | A_evals=31579 | S1_evals=348559 | A_accepted=78 | S1_accepted=63 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=384850 | C=5700.8529122472 | time=101.114313s | PRcalls=2 | PRtime=0.007575s | A_evals=29248 | S1_evals=351925 | A_accepted=65 | S1_accepted=64 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=435983 | C=5700.8529122472 | time=99.288630s | PRcalls=2 | PRtime=0.003770s | A_evals=30448 | S1_evals=357000 | A_accepted=70 | S1_accepted=65 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=134804 | C=5700.8529122472 | time=98.943136s | PRcalls=2 | PRtime=0.005346s | A_evals=28655 | S1_evals=361200 | A_accepted=59 | S1_accepted=66 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=172693 | C=5700.8529122472 | time=99.718972s | PRcalls=2 | PRtime=0.003897s | A_evals=31786 | S1_evals=331634 | A_accepted=82 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=210450 | C=5700.8529122472 | time=99.188232s | PRcalls=0 | PRtime=0.000000s | A_evals=30462 | S1_evals=357000 | A_accepted=68 | S1_accepted=67 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=171434 | C=5700.8529122472 | time=99.649124s | PRcalls=2 | PRtime=0.004155s | A_evals=32917 | S1_evals=369600 | A_accepted=79 | S1_accepted=68 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=187001 | C=5700.8529122472 | time=98.882898s | PRcalls=2 | PRtime=0.004871s | A_evals=30786 | S1_evals=335713 | A_accepted=76 | S1_accepted=60 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=133041 | C=5700.8529122472 | time=96.861663s | PRcalls=2 | PRtime=0.002633s | A_evals=28986 | S1_evals=298159 | A_accepted=76 | S1_accepted=51 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=328721 | C=5700.8529122472 | time=102.199446s | PRcalls=2 | PRtime=0.001129s | A_evals=31310 | S1_evals=411600 | A_accepted=62 | S1_accepted=78 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=497477 | C=5700.8529122472 | time=98.943009s | PRcalls=2 | PRtime=0.004865s | A_evals=28386 | S1_evals=327600 | A_accepted=66 | S1_accepted=58 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed= 91030 | C=5700.8529122472 | time=98.254505s | PRcalls=2 | PRtime=0.004212s | A_evals=28710 | S1_evals=336000 | A_accepted=67 | S1_accepted=60 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed= 87198 | C=5700.8529122472 | time=100.610984s | PRcalls=0 | PRtime=0.000000s | A_evals=30117 | S1_evals=382118 | A_accepted=62 | S1_accepted=73 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=205899 | C=5700.8529122472 | time=100.410162s | PRcalls=2 | PRtime=0.005597s | A_evals=29931 | S1_evals=361036 | A_accepted=64 | S1_accepted=66 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=400804 | C=5700.8529122472 | time=99.196552s | PRcalls=0 | PRtime=0.000000s | A_evals=28379 | S1_evals=356834 | A_accepted=60 | S1_accepted=67 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=237596 | C=5700.8529122472 | time=99.817619s | PRcalls=2 | PRtime=0.002834s | A_evals=30172 | S1_evals=382118 | A_accepted=64 | S1_accepted=71 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=  1346 | C=5700.8529122472 | time=100.233017s | PRcalls=0 | PRtime=0.000000s | A_evals=28793 | S1_evals=369559 | A_accepted=57 | S1_accepted=70 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=411979 | C=5700.8529122472 | time=102.107313s | PRcalls=2 | PRtime=0.001674s | A_evals=29117 | S1_evals=335672 | A_accepted=68 | S1_accepted=60 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=295898 | C=5700.8529122472 | time=99.480416s | PRcalls=2 | PRtime=0.005001s | A_evals=30393 | S1_evals=331349 | A_accepted=74 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=269046 | C=5700.8529122472 | time=99.784371s | PRcalls=2 | PRtime=0.002839s | A_evals=28917 | S1_evals=357000 | A_accepted=62 | S1_accepted=65 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=154485 | C=5700.8529122472 | time=99.066901s | PRcalls=2 | PRtime=0.006631s | A_evals=31779 | S1_evals=352181 | A_accepted=78 | S1_accepted=64 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=171750 | C=5700.8529122472 | time=100.401067s | PRcalls=2 | PRtime=0.005269s | A_evals=31855 | S1_evals=390600 | A_accepted=68 | S1_accepted=73 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=231105 | C=5700.8529122472 | time=100.533943s | PRcalls=0 | PRtime=0.000000s | A_evals=29641 | S1_evals=361200 | A_accepted=66 | S1_accepted=68 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=317139 | C=5700.6731193321 | time=99.323897s | PRcalls=2 | PRtime=0.004480s | A_evals=26655 | S1_evals=327600 | A_accepted=57 | S1_accepted=58 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed=409973 | C=5700.8529122472 | time=103.089888s | PRcalls=1 | PRtime=0.001943s | A_evals=31531 | S1_evals=302154 | A_accepted=86 | S1_accepted=53 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a1p0_s1 | seed= 89335 | C=5700.8529122472 | time=98.006403s | PRcalls=2 | PRtime=0.002555s | A_evals=31262 | S1_evals=323277 | A_accepted=80 | S1_accepted=57 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=183601 | C=8134.6318604279 | time=100.350264s | PRcalls=2 | PRtime=0.004023s | A_evals=28579 | S1_evals=309714 | A_accepted=72 | S1_accepted=54 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=122241 | C=8134.3388656800 | time=97.246097s | PRcalls=2 | PRtime=0.008771s | A_evals=29786 | S1_evals=326723 | A_accepted=73 | S1_accepted=58 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=347126 | C=8134.0847954087 | time=95.150393s | PRcalls=2 | PRtime=0.005327s | A_evals=27193 | S1_evals=263733 | A_accepted=74 | S1_accepted=43 | audit=1.819e-12
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=420036 | C=8134.6318604279 | time=94.709633s | PRcalls=2 | PRtime=0.004154s | A_evals=24655 | S1_evals=281195 | A_accepted=58 | S1_accepted=47 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed= 22114 | C=8134.6318604279 | time=96.224037s | PRcalls=2 | PRtime=0.004132s | A_evals=26924 | S1_evals=306313 | A_accepted=63 | S1_accepted=53 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=384850 | C=8134.6318604279 | time=98.814670s | PRcalls=2 | PRtime=0.004691s | A_evals=27903 | S1_evals=352097 | A_accepted=60 | S1_accepted=64 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=435983 | C=8134.6318604279 | time=95.454469s | PRcalls=2 | PRtime=0.002388s | A_evals=27448 | S1_evals=276790 | A_accepted=74 | S1_accepted=46 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=134804 | C=8134.6318604279 | time=95.776989s | PRcalls=2 | PRtime=0.004275s | A_evals=23786 | S1_evals=276995 | A_accepted=55 | S1_accepted=46 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=172693 | C=8134.6318604279 | time=96.261962s | PRcalls=2 | PRtime=0.002474s | A_evals=25455 | S1_evals=293541 | A_accepted=59 | S1_accepted=50 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=210450 | C=8134.6318604279 | time=98.961951s | PRcalls=2 | PRtime=0.004167s | A_evals=27655 | S1_evals=365152 | A_accepted=53 | S1_accepted=67 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=171434 | C=8134.6318604279 | time=94.436290s | PRcalls=2 | PRtime=0.004821s | A_evals=28455 | S1_evals=263809 | A_accepted=81 | S1_accepted=43 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=187001 | C=8134.6318604279 | time=95.665296s | PRcalls=2 | PRtime=0.002261s | A_evals=24386 | S1_evals=243227 | A_accepted=66 | S1_accepted=38 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=133041 | C=8134.3388656800 | time=96.942345s | PRcalls=2 | PRtime=0.035809s | A_evals=24724 | S1_evals=302195 | A_accepted=53 | S1_accepted=52 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=328721 | C=8134.6318604279 | time=98.852819s | PRcalls=2 | PRtime=0.027284s | A_evals=31441 | S1_evals=339411 | A_accepted=80 | S1_accepted=61 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=497477 | C=8134.6318604279 | time=97.518569s | PRcalls=2 | PRtime=0.002135s | A_evals=28455 | S1_evals=314668 | A_accepted=69 | S1_accepted=55 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed= 91030 | C=8134.6318604279 | time=97.721279s | PRcalls=1 | PRtime=0.002670s | A_evals=29524 | S1_evals=268431 | A_accepted=85 | S1_accepted=45 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed= 87198 | C=8134.6318604279 | time=95.428950s | PRcalls=2 | PRtime=0.002239s | A_evals=26186 | S1_evals=285190 | A_accepted=65 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=205899 | C=8134.6318604279 | time=95.960595s | PRcalls=2 | PRtime=0.003214s | A_evals=28131 | S1_evals=280607 | A_accepted=74 | S1_accepted=47 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=400804 | C=8134.3388656800 | time=95.268730s | PRcalls=2 | PRtime=0.003988s | A_evals=25455 | S1_evals=276663 | A_accepted=63 | S1_accepted=46 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=237596 | C=8134.6318604279 | time=96.104055s | PRcalls=2 | PRtime=0.004076s | A_evals=23234 | S1_evals=293381 | A_accepted=51 | S1_accepted=50 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=  1346 | C=8134.6318604279 | time=99.133574s | PRcalls=2 | PRtime=0.005556s | A_evals=28386 | S1_evals=335000 | A_accepted=64 | S1_accepted=60 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=411979 | C=8134.6318604279 | time=97.401553s | PRcalls=2 | PRtime=0.002468s | A_evals=29848 | S1_evals=301945 | A_accepted=80 | S1_accepted=52 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=295898 | C=8134.3388656800 | time=95.941325s | PRcalls=2 | PRtime=0.004083s | A_evals=26924 | S1_evals=285108 | A_accepted=68 | S1_accepted=48 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=269046 | C=8134.6318604279 | time=98.343934s | PRcalls=2 | PRtime=0.003955s | A_evals=31979 | S1_evals=330974 | A_accepted=84 | S1_accepted=59 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=154485 | C=8134.6318604279 | time=97.166158s | PRcalls=2 | PRtime=0.002224s | A_evals=26641 | S1_evals=301689 | A_accepted=65 | S1_accepted=52 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=171750 | C=8134.6318604279 | time=98.458843s | PRcalls=2 | PRtime=0.017637s | A_evals=32193 | S1_evals=331304 | A_accepted=83 | S1_accepted=59 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=231105 | C=8134.6318604279 | time=100.276691s | PRcalls=2 | PRtime=0.002424s | A_evals=26772 | S1_evals=361034 | A_accepted=52 | S1_accepted=66 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=317139 | C=8134.3388656800 | time=93.286082s | PRcalls=0 | PRtime=0.000000s | A_evals=26731 | S1_evals=225388 | A_accepted=80 | S1_accepted=36 | audit=0.000e+00
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed=409973 | C=8134.6318604279 | time=97.874236s | PRcalls=2 | PRtime=0.004766s | A_evals=28717 | S1_evals=322441 | A_accepted=69 | S1_accepted=57 | audit=9.095e-13
+ILvAS1P  | N400_I200_K100_J100_P30_a2p0_s1 | seed= 89335 | C=8134.3388656800 | time=94.644780s | PRcalls=2 | PRtime=0.005390s | A_evals=29124 | S1_evals=268554 | A_accepted=83 | S1_accepted=44 | audit=0.000e+00
+
+==============================================================================================================
+FINAL SUMMARY - ILS[A+S1]+PR FULL PROFILING
+==============================================================================================================
+Expected runs : 720
+Valid runs    : 720
+Errors        : 0
+Excel         : resultados_ilvas1p_30seeds.xlsx
+Checkpoint    : checkpoint_ilvas1p_30seeds.csv

@@ -1,0 +1,30 @@
+{
+  "generator": "CData-Lin-compatible",
+  "problem": "P-for-P POP-station / locker network redesign",
+  "N": 50,
+  "n_i": 50,
+  "n_j": 25,
+  "n_k": 25,
+  "p": 5,
+  "alpha": 1.0,
+  "seed": 23,
+  "grid_size": 1000.0,
+  "distance_scale": 100.0,
+  "demand_distribution": "Uniform[0,100]",
+  "coordinate_distribution": "Uniform([0,1000.0]^2)",
+  "service_thresholds": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "service_levels": [
+    1.0,
+    0.5,
+    0.2,
+    0.0
+  ],
+  "instance_name": "N100_I50_K25_J25_P5_a1p0_s23",
+  "npz_file": "N100_I50_K25_J25_P5_a1p0_s23.npz",
+  "n_total_facilities": 50,
+  "total_nodes_style_N": 100
+}

@@ -1,0 +1,155 @@
+====================================================================================================
+MIP - LOTE PILOTO
+====================================================================================================
+Limite por instancia : 3600 s (1 hora)
+Threads              : 1
+MIPGap               : 1.0e-06
+Seed                 : 1
+Casos                 : N60/p3,p6 e N100/p5
+Numero de instancias  : 9
+
+N60_I30_K15_J15_P3_a0p5_s1 | N=60 | p=3 | alpha=0.5 | seed=1
+N60_I30_K15_J15_P3_a1p0_s1 | N=60 | p=3 | alpha=1.0 | seed=1
+N60_I30_K15_J15_P3_a2p0_s1 | N=60 | p=3 | alpha=2.0 | seed=1
+N60_I30_K15_J15_P6_a0p5_s1 | N=60 | p=6 | alpha=0.5 | seed=1
+N60_I30_K15_J15_P6_a1p0_s1 | N=60 | p=6 | alpha=1.0 | seed=1
+N60_I30_K15_J15_P6_a2p0_s1 | N=60 | p=6 | alpha=2.0 | seed=1
+N100_I50_K25_J25_P5_a0p5_s1 | N=100 | p=5 | alpha=0.5 | seed=1
+N100_I50_K25_J25_P5_a1p0_s1 | N=100 | p=5 | alpha=1.0 | seed=1
+N100_I50_K25_J25_P5_a2p0_s1 | N=100 | p=5 | alpha=2.0 | seed=1
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P3_a0p5_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 477.7233865600
+MIP ObjVal           : 477.7233865600
+Best bound           : 477.7233865600
+Gap (%)              : 0.00000000
+Time (s)             : 5.207
+Nodes                : 212
+|ObjVal-C|           : 0.000000000000
+Existing open        : 0 1 2 4 5 6 7 8 9 10 11 14
+Existing closed      : 3 12 13
+Candidate open       : 8 10 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P3_a1p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 741.1082862682
+MIP ObjVal           : 741.1082864396
+Best bound           : 741.1082864396
+Gap (%)              : 0.00000000
+Time (s)             : 4.622
+Nodes                : 148
+|ObjVal-C|           : 0.000000171430
+Existing open        : 1 2 5 6 7 8 9 10 11 12 13 14
+Existing closed      : 0 3 4
+Candidate open       : 8 10 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P3_a2p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 950.8621875660
+MIP ObjVal           : 950.8621888158
+Best bound           : 950.8621888158
+Gap (%)              : 0.00000000
+Time (s)             : 2.169
+Nodes                : 1
+|ObjVal-C|           : 0.000001249814
+Existing open        : 0 1 2 5 6 7 8 9 10 11 12 13
+Existing closed      : 3 4 14
+Candidate open       : 2 8 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P6_a0p5_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 514.1474018760
+MIP ObjVal           : 514.1474018760
+Best bound           : 514.1474018760
+Gap (%)              : 0.00000000
+Time (s)             : 63.756
+Nodes                : 7393
+|ObjVal-C|           : 0.000000000000
+Existing open        : 1 2 4 5 6 7 8 9 10
+Existing closed      : 0 3 11 12 13 14
+Candidate open       : 2 8 10 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P6_a1p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 803.8894759083
+MIP ObjVal           : 803.8894759083
+Best bound           : 803.8894759083
+Gap (%)              : 0.00000000
+Time (s)             : 7.545
+Nodes                : 673
+|ObjVal-C|           : 0.000000000000
+Existing open        : 1 2 5 6 7 8 9 10 12
+Existing closed      : 0 3 4 11 13 14
+Candidate open       : 2 6 8 10 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N60_I30_K15_J15_P6_a2p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 1034.7825336526
+MIP ObjVal           : 1034.7825338866
+Best bound           : 1034.7825338866
+Gap (%)              : 0.00000000
+Time (s)             : 2.959
+Nodes                : 30
+|ObjVal-C|           : 0.000000233945
+Existing open        : 1 2 5 6 7 8 9 11 12
+Existing closed      : 0 3 4 10 13 14
+Candidate open       : 1 2 6 8 10 11
+
+----------------------------------------------------------------------------------------------------
+Instance             : N100_I50_K25_J25_P5_a0p5_s1
+Status               : TIME_LIMIT
+Otimalidade certific.: NAO
+C                    : 781.7532001645
+MIP ObjVal           : 781.7532001645
+Best bound           : 790.7489347623
+Gap (%)              : 1.15071286
+Time (s)             : 3600.048
+Nodes                : 269471
+|ObjVal-C|           : 0.000000000000
+Existing open        : 1 2 3 4 5 6 7 8 10 11 14 15 16 17 18 19 20 22 23 24
+Existing closed      : 0 9 12 13 21
+Candidate open       : 3 9 13 15 16
+
+----------------------------------------------------------------------------------------------------
+Instance             : N100_I50_K25_J25_P5_a1p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 1246.4804160905
+MIP ObjVal           : 1246.4804160905
+Best bound           : 1246.4804160905
+Gap (%)              : 0.00000000
+Time (s)             : 1465.183
+Nodes                : 97795
+|ObjVal-C|           : 0.000000000000
+Existing open        : 2 3 4 5 6 7 8 10 11 13 14 16 17 18 19 20 21 22 23 24
+Existing closed      : 0 1 9 12 15
+Candidate open       : 0 3 7 9 13
+
+----------------------------------------------------------------------------------------------------
+Instance             : N100_I50_K25_J25_P5_a2p0_s1
+Status               : OPTIMAL
+Otimalidade certific.: SIM
+C                    : 1673.7949660186
+MIP ObjVal           : 1673.7949774093
+Best bound           : 1673.7949774093
+Gap (%)              : 0.00000000
+Time (s)             : 39.629
+Nodes                : 2112
+|ObjVal-C|           : 0.000011390781
+Existing open        : 2 3 4 5 6 7 8 12 13 14 15 16 17 18 19 20 21 22 23 24
+Existing closed      : 0 1 9 10 11
+Candidate open       : 0 3 5 6 9
+

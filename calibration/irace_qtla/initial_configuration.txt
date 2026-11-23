@@ -1,0 +1,2 @@
+maxIterations subproblemTimeLimit dampingGamma trustRadiusFactor neighborCuts polishMaxSteps
+40 5 0.60 0.50 2 80

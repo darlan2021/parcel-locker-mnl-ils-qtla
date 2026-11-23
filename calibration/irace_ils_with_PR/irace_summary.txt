@@ -1,0 +1,45 @@
+$version
+[1] "4.4.1.ccb6607"
+
+$n_iterations
+[1] 2
+
+$n_configurations
+[1] 8
+
+$n_initial_configurations
+[1] 0
+
+$n_instances
+[1] 72
+
+$n_experiments
+[1] 576
+
+$n_elites
+[1] 1
+
+$n_soft_restarts
+[1] 0
+
+$n_rejected
+[1] 0
+
+$time_targetrunner
+[1] 0
+
+$time_cpu_user
+[1] 9.22
+
+$time_cpu_sys
+[1] 15.93
+
+$time_cpu_total
+[1] 25.15
+
+$time_wallclock
+[1] 13441.68
+
+$termination_reason
+[1] "Limit of iterations reached"
+

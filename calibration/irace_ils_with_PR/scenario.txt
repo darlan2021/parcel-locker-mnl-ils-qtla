@@ -1,0 +1,46 @@
+# Path-Relinking calibration for the frozen ILvAS1 baseline.
+# Run from calibration/irace_ils_with_PR inside parcel-locker-mnl-ils-qtla.
+
+parameterFile = "parameters.txt"
+configurationsFile = "initial_configuration.txt"
+logFile = "irace_ils_pr_calibration.Rdata"
+
+trainInstancesDir = "../../instances/instances_seed_11_12_13_N60_100_200_400"
+trainInstancesFile = "instances_calibration.txt"
+sampleInstances = TRUE
+
+testType = "friedman"
+firstTest = 5
+blockSize = 4
+eachTest = 1
+
+targetRunner = "target_runner_pr.py"
+# Use the Python environment containing numpy and the solver dependencies.
+# For portability, make sure the intended Python is on PATH before running RStudio.
+targetRunnerLauncher = "python"
+targetCmdline = "{targetRunner} {configurationID} {instanceID} {seed} {instance} {targetRunnerArgs}"
+targetRunnerRetries = 0
+targetRunnerTimeout = 0
+
+deterministic = FALSE
+
+# Exactly 8 admissible PR configurations. Full evaluation: 8 x 72 = 576.
+maxExperiments = 576
+nbIterations = 1
+nbConfigurations = 8
+minNbSurvival = 1
+
+parallel = 1
+loadBalancing = TRUE
+quiet = FALSE
+debugLevel = 2
+
+seed = 12345
+elitist = TRUE
+elitistNewInstances = 1
+elitistLimit = 2
+softRestart = FALSE
+postselection = TRUE
+
+capping = FALSE
+confidence = 0.95

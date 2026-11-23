@@ -1,0 +1,10 @@
+Start: 2026-10-13 23:20:11.20513
+End: 2026-10-14 03:04:13.03144
+Elapsed system.time: user.self 9.25; sys.self 15.97; elapsed 13441.76; user.child NA; sys.child NA
+Baseline: frozen ILvAS1.
+Only PR parameters were calibrated.
+prTriggerNoImprove domain: {1,2,3,5}.
+prBidirectional domain: {0,1}.
+path_relink_s2_samples = 0.
+Quality cost returned to irace = -C.
+CPU and PR effort are recorded in run_level_results.csv.

@@ -1,0 +1,132 @@
+{
+  "experiment": "ILS component analysis full profiling / irace ID 7",
+  "instance_dir": "instances_pilot",
+  "instance_seed": 1,
+  "instance_files_sha256": {
+    "N60_I30_K15_J15_P3_a0p5_s1.npz": "a852aba86b47cc8a8e4b8dc2a87799990f2e1e7a7235d93b1a9cae0be3cb0706",
+    "N60_I30_K15_J15_P3_a1p0_s1.npz": "ba7f0167420f687687fac141e5114501a1871ed293d317a5b96d17fff4959dac",
+    "N60_I30_K15_J15_P3_a2p0_s1.npz": "15f0e2f6f90f8ee3ff52289f8e48f9d59d6ab5b19493269f929ba40d08f0bb49",
+    "N60_I30_K15_J15_P6_a0p5_s1.npz": "fc8c8f349fb0e1b8ea22c3ef38c0e19607972edf552feb3b4c76ffd33c884923",
+    "N60_I30_K15_J15_P6_a1p0_s1.npz": "2a5b196962f0bff1482df947c06a7313f3b45110835dce14980551c0e5c92ccf",
+    "N60_I30_K15_J15_P6_a2p0_s1.npz": "975e5a173a90919646c6f1c9b7ed9348ba46ccd1482353cc18f5f08ddb0e6fef",
+    "N100_I50_K25_J25_P5_a0p5_s1.npz": "e301ff1695382fb78b372eb4ffd638762a02724c42b335d49702492559826edd",
+    "N100_I50_K25_J25_P5_a1p0_s1.npz": "e2e0c38a9be6c34df8dce0b012f7b10794fec47d87c16021026f5deb0a0a1762",
+    "N100_I50_K25_J25_P5_a2p0_s1.npz": "d6b688ffb70e8252370307a56b82a0f94a5e74474dfdc9963ebd602172f679ea",
+    "N100_I50_K25_J25_P10_a0p5_s1.npz": "57cfa6267e73391b4653c25f4750128a25809d22a6afd2dc45d73836bd581cc7",
+    "N100_I50_K25_J25_P10_a1p0_s1.npz": "b4b86fab84e51988cc1290501c4d9f5121add44957f7b5e8e23e5589c30d49e9",
+    "N100_I50_K25_J25_P10_a2p0_s1.npz": "abc37cb4784f170696e885c2fc00c249a41fb88ed2f0be55ebf59621fbc954dd",
+    "N200_I100_K50_J50_P10_a0p5_s1.npz": "4b2caf498134ab1dd5da3ad9234b94f4163ea0264a1fd61906f9c1081654599f",
+    "N200_I100_K50_J50_P10_a1p0_s1.npz": "6b1841a0403f5e825be61c98ae1476ffe323a8b6ab4213e0f739397c44df7841",
+    "N200_I100_K50_J50_P10_a2p0_s1.npz": "a9a6a49ea735fb403222f26596eb80ffee7d463e7d2d3ce9516dfae8592f17c0",
+    "N200_I100_K50_J50_P20_a0p5_s1.npz": "693d6473992b37e4a40fce9d2a2165b8af353bd4bb83b94d82ee67c1d1f4ab77",
+    "N200_I100_K50_J50_P20_a1p0_s1.npz": "10214808bef018af794a301f28833ca705b8f545ee00d7e1672225bcf8ab6ba2",
+    "N200_I100_K50_J50_P20_a2p0_s1.npz": "1a8aef7f00118ea6f3ce7e1e7aa5c3dcb6fea54e01ecf29cf22434424628e884",
+    "N400_I200_K100_J100_P20_a0p5_s1.npz": "4bee0822f1bd09da0b176c88e688caa3ea0583dc07911f1c670e69dfdfffdc34",
+    "N400_I200_K100_J100_P20_a1p0_s1.npz": "28963e0cea39633fba5ec4f9e86b78d3f0da1fbc5403db67bfd6305dad227014",
+    "N400_I200_K100_J100_P20_a2p0_s1.npz": "ec1086e4d60795179a00ad7102b2b1cbf0395ba51a860750472b3805006920ed",
+    "N400_I200_K100_J100_P30_a0p5_s1.npz": "3d38b9be6bf2140613e90debe3bb73bc4902d72873261ba2107a22049adec37b",
+    "N400_I200_K100_J100_P30_a1p0_s1.npz": "7c78023db4916efe5b7e7968df7e019791b2e449bd5406fbbdd42f96cf887acd",
+    "N400_I200_K100_J100_P30_a2p0_s1.npz": "464a8dacf01639ef139974c34c01a4f6b33515742881c53e776503a17e1ef939"
+  },
+  "source_mnl_ils_sha256": "c759737921c1c66abbe95ff455a99ab50be0e3aca48a0b4f4439a5f36db7b1c6",
+  "frozen_irace_id7": {
+    "grasp_starts": 8,
+    "grasp_alpha": 0.0823,
+    "max_vnd_passes": 250,
+    "tau_tabu": 13,
+    "max_cardinality_violation": 1,
+    "s2_sample_size": 350,
+    "first_improvement": false,
+    "enable_path_relink": false,
+    "penalty_weight": null,
+    "penalty_multiplier": 2.2255,
+    "penalty_quadratic": 0.6576,
+    "max_iterations": 10,
+    "time_limit": 3600,
+    "initial_perturbation_strength": 2,
+    "min_perturbation_strength": 1,
+    "max_perturbation_strength": 10,
+    "stagnation_window": 22,
+    "acceptance_tolerance": 0.0074,
+    "perturb_prob_A": 0.15,
+    "perturb_prob_S1": 0.55,
+    "perturb_prob_S2": 0.3,
+    "elite_size": 6,
+    "elite_min_hamming": 6,
+    "path_relink_interval": 10,
+    "path_relink_bidirectional": true,
+    "path_relink_s2_samples": 80
+  },
+  "component_flags": {
+    "A": {
+      "enable_A": true,
+      "enable_S1": false,
+      "enable_S2": false
+    },
+    "S1": {
+      "enable_A": false,
+      "enable_S1": true,
+      "enable_S2": false
+    },
+    "S2": {
+      "enable_A": false,
+      "enable_S1": false,
+      "enable_S2": true
+    },
+    "A_S1": {
+      "enable_A": true,
+      "enable_S1": true,
+      "enable_S2": false
+    },
+    "A_S2": {
+      "enable_A": true,
+      "enable_S1": false,
+      "enable_S2": true
+    },
+    "S1_S2": {
+      "enable_A": false,
+      "enable_S1": true,
+      "enable_S2": true
+    },
+    "A_S1_S2": {
+      "enable_A": true,
+      "enable_S1": true,
+      "enable_S2": true
+    }
+  },
+  "heuristic_seeds": [
+    183601,
+    122241,
+    347126,
+    420036,
+    22114,
+    384850,
+    435983,
+    134804,
+    172693,
+    210450,
+    171434,
+    187001,
+    133041,
+    328721,
+    497477,
+    91030,
+    87198,
+    205899,
+    400804,
+    237596,
+    1346,
+    411979,
+    295898,
+    269046,
+    154485,
+    171750,
+    231105,
+    317139,
+    409973,
+    89335
+  ],
+  "expected_runs": 5040,
+  "timing_unit": "wall-clock seconds measured via time.perf_counter",
+  "note": "S1/S2/A/repair are nested within VND; PR disabled in this experiment."
+}

@@ -1,0 +1,7 @@
+PRE-FLIGHT OK: 2026-10-07 20:16:20.768749
+irace_version: 4.4.1
+R_version: R version 4.4.1 (2024-06-14 ucrt)
+Design: 72 instances, 18 blocks x 4.
+N groups: 60, 100, 200, 400.
+FI/BI parameter: firstImprovement = 0/1.
+Temporary target-runner rows removed after checkIraceScenario().
