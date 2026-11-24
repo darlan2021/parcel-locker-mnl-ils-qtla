@@ -90,6 +90,8 @@ Each calibration folder retains its R scripts, `scenario.txt`, `parameters.txt`,
 | `run_qtla_stress_large_900_1200_1500.py` | Large-scale QT-LA stress test | `results/qtla_stress_large_900_1200_1500/` |
 | `run_ttt_n500_p30_lambda2.py` | Time-to-target experiment | `results/ttt_n500_p30_lambda2/` |
 
+**S2 sampling budgets (150, 350, and 500).** The script `scripts/run_ils_s2_budget_150_500.py` handles the 150- and 500-attempt budgets and stores their run-level results separately as `checkpoint_s2_budget_150.csv` and `checkpoint_s2_budget_500.csv` in `results/ils/ils_results_s2_budget_150_500/`. The 350-attempt reference uses full-customer S2 evaluation (the `S2`, `S1S2`, `AS2`, and `AS1S2` baseline configurations) in `results/ils/ils_results_s2_percent_sensitivity/resultados_s2_sensitivity.xlsx`, produced by `scripts/run_ils_s2_percent_sensitivity.py`. The budget comparison uses 12 development instances and heuristic seeds 1–5 for each configuration.
+
 The instance-generation scripts are also located in `scripts/`. Original result filenames and checkpoints have been retained for traceability.
 
 ## Running the code
