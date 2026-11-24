@@ -2,9 +2,9 @@ from __future__ import annotations
 
 """S2 sampling-budget sensitivity: budgets 150 and 500 (350 previously tested).
 
-This same runner was used for TWO SEPARATE experiments by selecting one
-S2 sampling budget at a time: 150 or 500 moves per call. These budgets are
-NOT instance sizes N. Each selected budget produces its own checkpoint CSV.
+This runner supports both original sampling budgets (150 and 500) in one
+execution. They are candidate-generation attempts, NOT instance sizes N.
+Each budget uses its own original checkpoint CSV; completed runs are skipped.
 
 Protocol: 12 development instances (instance seed 1), four S2-containing
 families, heuristic seeds 1..5, PR off, all customers evaluated per sampled
@@ -12,7 +12,7 @@ move, with the original ILSConfig defaults except the explicit settings below.
 
 Repository layout: this file is placed under scripts/; implementations under
 src/; input instances under instances/; outputs under results/ils/.
-To select a budget, uncomment exactly ONE BUDGETS assignment below.
+The original numerical settings and output schema are unchanged.
 """
 
 import argparse
@@ -33,13 +33,11 @@ from mnl_ils import ILSConfig, MNLParcelLockerILS
 INSTANCE_DIR = ROOT / 'instances' / 'instances_seed_1_N_60_100_200_400'
 OUTPUT_DIR = ROOT / 'results' / 'ils' / 'ils_results_s2_budget_150_500'
 
-# This runner was used in two separate passes: S2 budgets 150 and 500.
-# Activate only one of the lines below per execution.
-BUDGETS = (150,)
-# BUDGETS = (500,)
+# Run both historic budgets; each remains in a separate CSV.
+BUDGETS = (150, 500)
 
-# Separate checkpoints keep the two experiments independent.
-CHECKPOINT = OUTPUT_DIR / f'checkpoint_s2_budget_{BUDGETS[0]}.csv'
+def checkpoint_path(budget):
+    return OUTPUT_DIR / f'checkpoint_s2_budget_{budget}.csv' 
 HEURISTIC_SEEDS = range(1, 6)
 FAMILIES = {
     'S2': (False, False),
@@ -101,25 +99,27 @@ def key(row):
     return (str(row['instance']),str(row['configuration']),int(row['s2_sample_size']),int(row['heuristic_seed']))
 
 
-def load_checkpoint():
+def load_checkpoint(budget):
     done = {}
-    if CHECKPOINT.exists():
-        with CHECKPOINT.open(newline='',encoding='utf-8-sig') as f:
+    checkpoint = checkpoint_path(budget)
+    if checkpoint.exists():
+        with checkpoint.open(newline='',encoding='utf-8-sig') as f:
             for row in csv.DictReader(f,delimiter=';'):
-                if row.get('feasible') == 'SIM' and row.get('C'):
+                if row.get('feasible') == 'SIM' and row.get('C') and int(row['s2_sample_size']) == budget:
                     done[key(row)] = row
     return done
 
 
-def write_checkpoint(done):
+def write_checkpoint(done, budget):
     OUTPUT_DIR.mkdir(parents=True,exist_ok=True)
-    temp = CHECKPOINT.with_suffix('.tmp')
+    checkpoint = checkpoint_path(budget)
+    temp = checkpoint.with_suffix('.tmp')
     with temp.open('w',newline='',encoding='utf-8-sig') as f:
         w = csv.DictWriter(f,fieldnames=FIELDS,delimiter=';')
         w.writeheader()
         for k in sorted(done):
             w.writerow({col:done[k].get(col,'') for col in FIELDS})
-    temp.replace(CHECKPOINT)
+    temp.replace(checkpoint)
 
 
 def run_one(instance, family, flags, budget, seed):
@@ -178,12 +178,15 @@ def main():
     parser.add_argument('--limit',type=int,default=None,help='Executar no maximo N novos casos (teste rapido)')
     args=parser.parse_args()
     instances=load_instances()
-    done=load_checkpoint()
+    done={}
+    for budget in BUDGETS:
+        done.update(load_checkpoint(budget))
     cases=[(ins,fam,flags,b,seed) for ins in instances for fam,flags in FAMILIES.items() for b in BUDGETS for seed in HEURISTIC_SEEDS]
     missing=[v for v in cases if (v[0].name,v[1],v[3],v[4]) not in done]
     print(f'Instancias: {len(instances)} | familias S2: {len(FAMILIES)} | orcamentos: {BUDGETS} | sementes: 1..5')
     print(f'Execucoes totais: {len(cases)} | concluidas: {len(done)} | pendentes: {len(missing)}',flush=True)
-    print(f'Checkpoint: {CHECKPOINT}',flush=True)
+    for budget in BUDGETS:
+        print(f'Checkpoint S2={budget}: {checkpoint_path(budget)}',flush=True)
     if args.dry_run:
         return
     if args.limit is not None:
@@ -197,10 +200,11 @@ def main():
             print(f'ERRO: {exc}',flush=True)
             raise  # incomplete job remains in the checkpoint for later resume
         done[key(row)]=row
-        write_checkpoint(done)
+        write_checkpoint({k:v for k,v in done.items() if k[2] == b}, b)
         print(f"C={float(row['C']):.6f} T={float(row['time_s']):.3f}s Evals={row['s2_evaluations']} Aceitos={row['s2_accepted']}",flush=True)
     print(f'Concluido. Tempo da sessao: {time.perf_counter()-start:.1f}s',flush=True)
-    print(f'Resultados: {CHECKPOINT}',flush=True)
+    for budget in BUDGETS:
+        print(f'Resultados S2={budget}: {checkpoint_path(budget)}',flush=True)
 
 if __name__=='__main__':
     main()
